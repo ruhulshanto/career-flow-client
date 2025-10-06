@@ -1,0 +1,2075 @@
+
+{
+  "categories": [
+    {
+      "id": "doctor",
+      "title": "Doctor (MBBS)",
+      "questions": [
+        {
+          "text": "Why do you want to become a doctor?",
+          "options": [
+            {"text": "To help people and make a difference in their lives", "isCorrect": true},
+            {"text": "For the high salary and social status", "isCorrect": false},
+            {"text": "Because my family expects me to become one", "isCorrect": false},
+            {"text": "I'm not sure yet, just exploring options", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "How do you handle stressful situations?",
+          "options": [
+            {"text": "I remain calm and focused on solving the problem", "isCorrect": true},
+            {"text": "I get anxious but can push through", "isCorrect": false},
+            {"text": "I tend to avoid stressful situations", "isCorrect": false},
+            {"text": "I become overwhelmed and need help from others", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you enjoy studying biology and chemistry?",
+          "options": [
+            {"text": "Yes, I find them fascinating and enjoy learning more", "isCorrect": true},
+            {"text": "I like one but not the other", "isCorrect": false},
+            {"text": "They're okay, but not my favorite subjects", "isCorrect": false},
+            {"text": "No, I find them difficult and uninteresting", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Are you comfortable working long hours?",
+          "options": [
+            {"text": "Yes, I can maintain focus and energy through long shifts", "isCorrect": true},
+            {"text": "I can do it occasionally but prefer regular hours", "isCorrect": false},
+            {"text": "I prefer standard work hours with predictable schedules", "isCorrect": false},
+            {"text": "No, I value work-life balance above all", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you like helping people directly?",
+          "options": [
+            {"text": "Yes, I find it deeply rewarding to assist others directly", "isCorrect": true},
+            {"text": "I prefer helping indirectly through systems or research", "isCorrect": false},
+            {"text": "I'm comfortable with limited direct interaction", "isCorrect": false},
+            {"text": "I prefer working independently rather than with people", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Would you prefer hospital or research work?",
+          "options": [
+            {"text": "Hospital work with direct patient care", "isCorrect": true},
+            {"text": "Research work to advance medical knowledge", "isCorrect": false},
+            {"text": "A combination of both clinical and research work", "isCorrect": false},
+            {"text": "Neither appeals to me particularly", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Are you interested in human anatomy?",
+          "options": [
+            {"text": "Very interested - I find the human body fascinating", "isCorrect": true},
+            {"text": "Somewhat interested in specific areas", "isCorrect": false},
+            {"text": "It's okay but not particularly compelling", "isCorrect": false},
+            {"text": "Not interested at all", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "How strong is your memorization ability?",
+          "options": [
+            {"text": "Excellent - I can remember complex information easily", "isCorrect": true},
+            {"text": "Good with techniques like mnemonics", "isCorrect": false},
+            {"text": "Average - it takes effort to memorize things", "isCorrect": false},
+            {"text": "Poor - I struggle to retain detailed information", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you like reading and continuous learning?",
+          "options": [
+            {"text": "Yes, I enjoy learning and keeping up with new developments", "isCorrect": true},
+            {"text": "I learn when necessary but don't seek it out", "isCorrect": false},
+            {"text": "I prefer hands-on learning over reading", "isCorrect": false},
+            {"text": "I find continuous learning exhausting", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Can you handle seeing blood/surgery?",
+          "options": [
+            {"text": "Yes, I'm not bothered by blood or medical procedures", "isCorrect": true},
+            {"text": "I'm okay with some medical situations but not others", "isCorrect": false},
+            {"text": "I get queasy but could probably adjust", "isCorrect": false},
+            {"text": "No, I'm very sensitive to such things", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Are you patient and empathetic?",
+          "options": [
+            {"text": "Yes, I naturally understand and care about others' feelings", "isCorrect": true},
+            {"text": "I try to be but it doesn't always come naturally", "isCorrect": false},
+            {"text": "I'm better with problems than with emotions", "isCorrect": false},
+            {"text": "I prefer focusing on tasks rather than emotions", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Would you like to specialize in surgery or medicine?",
+          "options": [
+            {"text": "Surgery - I enjoy hands-on procedures", "isCorrect": true},
+            {"text": "Medicine - I prefer diagnosis and treatment planning", "isCorrect": false},
+            {"text": "I'm open to various specialties", "isCorrect": false},
+            {"text": "I'm not interested in either area", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you enjoy teamwork in medical environment?",
+          "options": [
+            {"text": "Yes, I value collaborative healthcare approaches", "isCorrect": true},
+            {"text": "I prefer working independently with occasional collaboration", "isCorrect": false},
+            {"text": "Teamwork is challenging for me", "isCorrect": false},
+            {"text": "I strongly prefer working alone", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Can you make quick decisions in emergencies?",
+          "options": [
+            {"text": "Yes, I remain calm and decisive under pressure", "isCorrect": true},
+            {"text": "I can make decisions but need a moment to think", "isCorrect": false},
+            {"text": "I prefer having time to consider options carefully", "isCorrect": false},
+            {"text": "I struggle with decision-making in high-pressure situations", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you want to contribute to society's health?",
+          "options": [
+            {"text": "Yes, improving public health is important to me", "isCorrect": true},
+            {"text": "I'm more interested in individual patient care", "isCorrect": false},
+            {"text": "I'm neutral about societal impact", "isCorrect": false},
+            {"text": "I prefer focusing on my own career goals", "isCorrect": false}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "engineer",
+      "title": "Engineer (B.Tech)",
+      "questions": [
+        {
+          "text": "Why do you want to be an engineer?",
+          "options": [
+            {"text": "I enjoy solving practical problems and creating solutions", "isCorrect": true},
+            {"text": "Engineering offers good career opportunities", "isCorrect": false},
+            {"text": "I'm good at math and science", "isCorrect": false},
+            {"text": "My family or teachers suggested it", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you enjoy solving math and physics problems?",
+          "options": [
+            {"text": "Yes, I find them challenging and rewarding", "isCorrect": true},
+            {"text": "I enjoy some types of problems but not others", "isCorrect": false},
+            {"text": "I can solve them but don't particularly enjoy it", "isCorrect": false},
+            {"text": "No, I find them frustrating and difficult", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you like designing and building things?",
+          "options": [
+            {"text": "Yes, I enjoy creating functional objects and systems", "isCorrect": true},
+            {"text": "I like designing but not necessarily building", "isCorrect": false},
+            {"text": "I prefer following existing designs rather than creating new ones", "isCorrect": false},
+            {"text": "No, I don't enjoy hands-on creation", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Are you good at logical reasoning?",
+          "options": [
+            {"text": "Yes, I'm strong at systematic problem-solving", "isCorrect": true},
+            {"text": "I'm decent but it requires effort", "isCorrect": false},
+            {"text": "I struggle with purely logical approaches", "isCorrect": false},
+            {"text": "I prefer creative or intuitive thinking", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you prefer coding or hardware design?",
+          "options": [
+            {"text": "Coding - I enjoy software development", "isCorrect": true},
+            {"text": "Hardware design - I prefer physical systems", "isCorrect": false},
+            {"text": "Both interest me equally", "isCorrect": false},
+            {"text": "Neither particularly appeals to me", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you enjoy teamwork on projects?",
+          "options": [
+            {"text": "Yes, I value collaborative problem-solving", "isCorrect": true},
+            {"text": "I prefer working independently on my components", "isCorrect": false},
+            {"text": "Teamwork can be challenging but productive", "isCorrect": false},
+            {"text": "I strongly prefer working alone", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Are you creative in problem solving?",
+          "options": [
+            {"text": "Yes, I often find innovative solutions", "isCorrect": true},
+            {"text": "I can be creative within certain constraints", "isCorrect": false},
+            {"text": "I prefer established methods over creative ones", "isCorrect": false},
+            {"text": "I struggle with creative approaches", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you enjoy experimenting?",
+          "options": [
+            {"text": "Yes, I like testing ideas and learning from results", "isCorrect": true},
+            {"text": "I experiment when necessary but prefer certainty", "isCorrect": false},
+            {"text": "I find experimentation frustrating", "isCorrect": false},
+            {"text": "I avoid experimentation whenever possible", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Can you work under deadlines?",
+          "options": [
+            {"text": "Yes, deadlines help me focus and prioritize", "isCorrect": true},
+            {"text": "I can work under deadlines but prefer flexible timelines", "isCorrect": false},
+            {"text": "Deadlines cause me significant stress", "isCorrect": false},
+            {"text": "I struggle to produce quality work under time pressure", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you like using software tools (CAD, MATLAB)?",
+          "options": [
+            {"text": "Yes, I enjoy learning and using technical software", "isCorrect": true},
+            {"text": "I can use them but don't particularly enjoy it", "isCorrect": false},
+            {"text": "I prefer working without specialized software", "isCorrect": false},
+            {"text": "I find technical software difficult to learn", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you want to work in research or industry?",
+          "options": [
+            {"text": "Research - I want to advance engineering knowledge", "isCorrect": true},
+            {"text": "Industry - I want to apply engineering to real products", "isCorrect": false},
+            {"text": "A combination of both", "isCorrect": false},
+            {"text": "I'm not sure yet", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Are you interested in sustainable technology?",
+          "options": [
+            {"text": "Yes, developing eco-friendly solutions is important to me", "isCorrect": true},
+            {"text": "I'm interested but it's not my primary focus", "isCorrect": false},
+            {"text": "I'm neutral about sustainability aspects", "isCorrect": false},
+            {"text": "I prefer focusing on efficiency over sustainability", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you enjoy learning new tech skills?",
+          "options": [
+            {"text": "Yes, I enjoy staying current with technological advances", "isCorrect": true},
+            {"text": "I learn when necessary but don't seek it out", "isCorrect": false},
+            {"text": "I find constant learning exhausting", "isCorrect": false},
+            {"text": "I prefer sticking with what I already know", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Would you like to specialize in civil, mechanical, or electrical?",
+          "options": [
+            {"text": "Civil engineering - infrastructure and construction", "isCorrect": true},
+            {"text": "Mechanical engineering - machines and systems", "isCorrect": false},
+            {"text": "Electrical engineering - circuits and power systems", "isCorrect": false},
+            {"text": "I'm interested in other engineering fields", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you like innovation and startups?",
+          "options": [
+            {"text": "Yes, I'm excited by new ideas and entrepreneurial ventures", "isCorrect": true},
+            {"text": "I appreciate innovation but prefer established companies", "isCorrect": false},
+            {"text": "I'm cautious about unproven ideas and startups", "isCorrect": false},
+            {"text": "I prefer traditional, stable engineering roles", "isCorrect": false}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pharmacy",
+      "title": "Pharmacy (B.Pharm)",
+      "questions": [
+        {
+          "text": "Why do you want to study pharmacy?",
+          "options": [
+            {"text": "I'm interested in medicines and their effects on health", "isCorrect": true},
+            {"text": "Pharmacy offers stable career options", "isCorrect": false},
+            {"text": "I'm good at chemistry", "isCorrect": false},
+            {"text": "I'm not sure, just exploring options", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you like studying chemistry?",
+          "options": [
+            {"text": "Yes, I find chemical interactions fascinating", "isCorrect": true},
+            {"text": "Some areas interest me more than others", "isCorrect": false},
+            {"text": "It's okay but not my favorite subject", "isCorrect": false},
+            {"text": "No, I find chemistry difficult and uninteresting", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Are you detail-oriented?",
+          "options": [
+            {"text": "Yes, I'm meticulous and careful with details", "isCorrect": true},
+            {"text": "I can be detail-oriented when needed", "isCorrect": false},
+            {"text": "I sometimes miss details but catch important ones", "isCorrect": false},
+            {"text": "I prefer big-picture thinking over details", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you enjoy working in labs?",
+          "options": [
+            {"text": "Yes, I'm comfortable and focused in laboratory settings", "isCorrect": true},
+            {"text": "I enjoy some lab work but not all types", "isCorrect": false},
+            {"text": "I prefer theoretical work over practical lab work", "isCorrect": false},
+            {"text": "I find lab work tedious and restrictive", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Would you like to research new medicines?",
+          "options": [
+            {"text": "Yes, developing new treatments excites me", "isCorrect": true},
+            {"text": "I'm more interested in dispensing existing medicines", "isCorrect": false},
+            {"text": "Research seems interesting but challenging", "isCorrect": false},
+            {"text": "I'm not particularly interested in drug research", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you enjoy patient counseling?",
+          "options": [
+            {"text": "Yes, I like helping people understand their medications", "isCorrect": true},
+            {"text": "I'm comfortable with limited patient interaction", "isCorrect": false},
+            {"text": "I prefer technical work over patient communication", "isCorrect": false},
+            {"text": "I find patient counseling stressful", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Can you handle responsibility of drug safety?",
+          "options": [
+            {"text": "Yes, I understand the importance and am very careful", "isCorrect": true},
+            {"text": "I can handle it but would need strong systems in place", "isCorrect": false},
+            {"text": "The responsibility would make me anxious", "isCorrect": false},
+            {"text": "I prefer work with less serious consequences", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you prefer hospital or industrial pharmacy?",
+          "options": [
+            {"text": "Hospital pharmacy - direct patient care", "isCorrect": true},
+            {"text": "Industrial pharmacy - drug manufacturing and development", "isCorrect": false},
+            {"text": "Retail pharmacy - community service", "isCorrect": false},
+            {"text": "I'm not sure which setting I prefer", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Are you comfortable with long studies?",
+          "options": [
+            {"text": "Yes, I'm committed to the education required", "isCorrect": true},
+            {"text": "I can manage but prefer shorter programs", "isCorrect": false},
+            {"text": "Long studies would be challenging for me", "isCorrect": false},
+            {"text": "I prefer entering the workforce quickly", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you like studying diseases and cures?",
+          "options": [
+            {"text": "Yes, I find medical science fascinating", "isCorrect": true},
+            {"text": "Some areas interest me more than others", "isCorrect": false},
+            {"text": "I'm more interested in chemistry than disease", "isCorrect": false},
+            {"text": "I don't particularly enjoy studying diseases", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you want to work in drug manufacturing?",
+          "options": [
+            {"text": "Yes, the production process interests me", "isCorrect": true},
+            {"text": "I'm more interested in research and development", "isCorrect": false},
+            {"text": "I prefer clinical pharmacy roles", "isCorrect": false},
+            {"text": "I'm not interested in manufacturing", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Are you interested in biotechnology?",
+          "options": [
+            {"text": "Yes, biotech applications in pharmacy excite me", "isCorrect": true},
+            {"text": "Some aspects interest me", "isCorrect": false},
+            {"text": "I'm more interested in traditional pharmacy", "isCorrect": false},
+            {"text": "I'm not particularly interested in biotechnology", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you like learning regulations and ethics?",
+          "options": [
+            {"text": "Yes, I understand their importance in healthcare", "isCorrect": true},
+            {"text": "I can learn them but don't particularly enjoy it", "isCorrect": false},
+            {"text": "I find regulations restrictive", "isCorrect": false},
+            {"text": "I prefer focusing on scientific aspects", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you enjoy teamwork with doctors?",
+          "options": [
+            {"text": "Yes, I value collaborative healthcare", "isCorrect": true},
+            {"text": "I'm comfortable with limited collaboration", "isCorrect": false},
+            {"text": "I prefer working independently", "isCorrect": false},
+            {"text": "I find interdisciplinary teamwork challenging", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you want to pursue higher research in pharmacy?",
+          "options": [
+            {"text": "Yes, I'm interested in advancing pharmaceutical science", "isCorrect": true},
+            {"text": "I'm more interested in clinical practice", "isCorrect": false},
+            {"text": "I might consider it later", "isCorrect": false},
+            {"text": "No, I prefer to stop after undergraduate studies", "isCorrect": false}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "technology",
+      "title": "Technology (BCA, Data Science, AI)",
+      "questions": [
+        {
+          "text": "Why do you want to study technology?",
+          "options": [
+            {"text": "I'm fascinated by how technology solves problems", "isCorrect": true},
+            {"text": "Tech careers offer good salaries", "isCorrect": false},
+            {"text": "I'm good with computers", "isCorrect": false},
+            {"text": "It seems like a safe career choice", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you enjoy coding and programming?",
+          "options": [
+            {"text": "Yes, I find creating with code rewarding", "isCorrect": true},
+            {"text": "I enjoy some programming but not all types", "isCorrect": false},
+            {"text": "I can code but don't particularly enjoy it", "isCorrect": false},
+            {"text": "I find programming frustrating and difficult", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Are you comfortable with math and statistics?",
+          "options": [
+            {"text": "Yes, I enjoy mathematical problem-solving", "isCorrect": true},
+            {"text": "I'm comfortable with some math areas but not others", "isCorrect": false},
+            {"text": "I can handle math but prefer other subjects", "isCorrect": false},
+            {"text": "I struggle with mathematical concepts", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you like working with computers and data?",
+          "options": [
+            {"text": "Yes, I enjoy digital environments and data analysis", "isCorrect": true},
+            {"text": "I prefer hardware over software/data", "isCorrect": false},
+            {"text": "I'm comfortable but not passionate about it", "isCorrect": false},
+            {"text": "I prefer working with people rather than computers", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Are you interested in artificial intelligence?",
+          "options": [
+            {"text": "Yes, AI and machine learning fascinate me", "isCorrect": true},
+            {"text": "Some aspects interest me", "isCorrect": false},
+            {"text": "I'm more interested in other tech areas", "isCorrect": false},
+            {"text": "I'm not particularly interested in AI", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you enjoy solving logical problems?",
+          "options": [
+            {"text": "Yes, I enjoy systematic problem-solving", "isCorrect": true},
+            {"text": "I can solve them but prefer creative challenges", "isCorrect": false},
+            {"text": "I find logical problems tedious", "isCorrect": false},
+            {"text": "I struggle with purely logical approaches", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Would you like to develop apps or systems?",
+          "options": [
+            {"text": "Apps - I enjoy creating user-facing software", "isCorrect": true},
+            {"text": "Systems - I prefer backend infrastructure", "isCorrect": false},
+            {"text": "Both interest me equally", "isCorrect": false},
+            {"text": "I'm not interested in development work", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Are you willing to keep learning new tech?",
+          "options": [
+            {"text": "Yes, I enjoy staying current with technology trends", "isCorrect": true},
+            {"text": "I'll learn what's necessary for my job", "isCorrect": false},
+            {"text": "I find constant learning exhausting", "isCorrect": false},
+            {"text": "I prefer sticking with established technologies", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you enjoy teamwork on tech projects?",
+          "options": [
+            {"text": "Yes, I value collaborative development", "isCorrect": true},
+            {"text": "I prefer working independently on components", "isCorrect": false},
+            {"text": "Teamwork can be challenging but productive", "isCorrect": false},
+            {"text": "I strongly prefer working alone", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Can you work on long coding tasks?",
+          "options": [
+            {"text": "Yes, I can maintain focus through extended coding sessions", "isCorrect": true},
+            {"text": "I prefer shorter, varied tasks", "isCorrect": false},
+            {"text": "Long coding sessions drain my energy", "isCorrect": false},
+            {"text": "I struggle to maintain concentration on coding", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you like analyzing large datasets?",
+          "options": [
+            {"text": "Yes, I enjoy finding patterns in data", "isCorrect": true},
+            {"text": "I can analyze data but don't particularly enjoy it", "isCorrect": false},
+            {"text": "I prefer working with smaller, manageable datasets", "isCorrect": false},
+            {"text": "I find data analysis tedious", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you prefer software or data science?",
+          "options": [
+            {"text": "Software development - building applications", "isCorrect": true},
+            {"text": "Data science - analyzing and interpreting data", "isCorrect": false},
+            {"text": "Both interest me", "isCorrect": false},
+            {"text": "I'm interested in other tech areas", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you want to work in startups or big tech?",
+          "options": [
+            {"text": "Startups - I enjoy innovation and variety", "isCorrect": true},
+            {"text": "Big tech - I prefer stability and resources", "isCorrect": false},
+            {"text": "I'm open to both environments", "isCorrect": false},
+            {"text": "I prefer other work settings", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Are you creative with digital solutions?",
+          "options": [
+            {"text": "Yes, I often find innovative tech solutions", "isCorrect": true},
+            {"text": "I can be creative within certain constraints", "isCorrect": false},
+            {"text": "I prefer implementing established solutions", "isCorrect": false},
+            {"text": "I struggle with creative approaches to tech", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you enjoy automating tasks with code?",
+          "options": [
+            {"text": "Yes, I find automation satisfying and efficient", "isCorrect": true},
+            {"text": "I automate when necessary but don't seek it out", "isCorrect": false},
+            {"text": "I prefer manual control over automation", "isCorrect": false},
+            {"text": "I find automation complex and unnecessary", "isCorrect": false}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "title": "Design (B.Des)",
+      "questions": [
+        {
+          "text": "Why do you want to study design?",
+          "options": [
+            {"text": "I'm passionate about creating visual solutions", "isCorrect": true},
+            {"text": "Design seems like a creative career option", "isCorrect": false},
+            {"text": "I'm good at drawing", "isCorrect": false},
+            {"text": "I'm not sure, just exploring options", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Are you creative with ideas and visuals?",
+          "options": [
+            {"text": "Yes, I frequently generate original concepts", "isCorrect": true},
+            {"text": "I can be creative with guidance or inspiration", "isCorrect": false},
+            {"text": "I prefer implementing others' ideas", "isCorrect": false},
+            {"text": "I struggle with creative thinking", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you enjoy drawing or sketching?",
+          "options": [
+            {"text": "Yes, I regularly sketch my ideas", "isCorrect": true},
+            {"text": "I can draw but don't particularly enjoy it", "isCorrect": false},
+            {"text": "I prefer digital creation over traditional drawing", "isCorrect": false},
+            {"text": "I don't enjoy drawing at all", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you like solving aesthetic problems?",
+          "options": [
+            {"text": "Yes, I enjoy creating visual harmony and function", "isCorrect": true},
+            {"text": "I can address aesthetics when necessary", "isCorrect": false},
+            {"text": "I prefer purely functional solutions", "isCorrect": false},
+            {"text": "I find aesthetic considerations unimportant", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you enjoy using digital design tools?",
+          "options": [
+            {"text": "Yes, I enjoy learning and using design software", "isCorrect": true},
+            {"text": "I can use them but prefer traditional methods", "isCorrect": false},
+            {"text": "I find design software difficult to learn", "isCorrect": false},
+            {"text": "I don't enjoy working with digital tools", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Would you like to work in product or graphic design?",
+          "options": [
+            {"text": "Product design - creating functional objects", "isCorrect": true},
+            {"text": "Graphic design - visual communication", "isCorrect": false},
+            {"text": "Both interest me", "isCorrect": false},
+            {"text": "I'm interested in other design fields", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Are you good at understanding user needs?",
+          "options": [
+            {"text": "Yes, I can empathize with and anticipate user requirements", "isCorrect": true},
+            {"text": "I can understand needs when they're clearly stated", "isCorrect": false},
+            {"text": "I prefer focusing on aesthetics over functionality", "isCorrect": false},
+            {"text": "I struggle to understand user perspectives", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you like working on real-world projects?",
+          "options": [
+            {"text": "Yes, I enjoy solving practical design problems", "isCorrect": true},
+            {"text": "I prefer theoretical or conceptual design", "isCorrect": false},
+            {"text": "Real-world constraints frustrate me", "isCorrect": false},
+            {"text": "I prefer artistic expression over practical design", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Can you handle criticism on your work?",
+          "options": [
+            {"text": "Yes, I see feedback as opportunity to improve", "isCorrect": true},
+            {"text": "I can handle constructive criticism", "isCorrect": false},
+            {"text": "Criticism makes me defensive", "isCorrect": false},
+            {"text": "I prefer not to share my work to avoid criticism", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Are you open to continuous feedback?",
+          "options": [
+            {"text": "Yes, I value iterative improvement", "isCorrect": true},
+            {"text": "I'm open to feedback at certain stages", "isCorrect": false},
+            {"text": "I prefer to complete work before receiving feedback", "isCorrect": false},
+            {"text": "I find constant feedback disruptive", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you enjoy collaborating with engineers?",
+          "options": [
+            {"text": "Yes, I value interdisciplinary teamwork", "isCorrect": true},
+            {"text": "I'm comfortable with limited collaboration", "isCorrect": false},
+            {"text": "I prefer working only with other designers", "isCorrect": false},
+            {"text": "I find collaboration with engineers challenging", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you prefer fashion or industrial design?",
+          "options": [
+            {"text": "Fashion design - clothing and apparel", "isCorrect": true},
+            {"text": "Industrial design - products and equipment", "isCorrect": false},
+            {"text": "Both interest me", "isCorrect": false},
+            {"text": "I'm interested in other design specialties", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Are you interested in 3D and animation?",
+          "options": [
+            {"text": "Yes, I enjoy three-dimensional design", "isCorrect": true},
+            {"text": "Some aspects interest me", "isCorrect": false},
+            {"text": "I prefer 2D design", "isCorrect": false},
+            {"text": "I'm not particularly interested in 3D", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you like presenting your ideas?",
+          "options": [
+            {"text": "Yes, I enjoy explaining my design concepts", "isCorrect": true},
+            {"text": "I can present when necessary", "isCorrect": false},
+            {"text": "I prefer letting my work speak for itself", "isCorrect": false},
+            {"text": "I find presenting stressful", "isCorrect": false}
+          ]
+        },
+        {
+          "text": "Do you enjoy keeping up with trends?",
+          "options": [
+            {"text": "Yes, I enjoy tracking design evolution", "isCorrect": true},
+            {"text": "I follow trends selectively", "isCorrect": false},
+            {"text": "I prefer creating timeless designs", "isCorrect": false},
+            {"text": "I find trend-chasing superficial", "isCorrect": false}
+          ]
+        }
+      ]
+    },
+   {
+  "id": "environmental_science",
+  "title": "Environmental Science",
+  "questions": [
+    {
+      "text": "Why are you interested in Environmental Science?",
+      "options": [
+        {"text": "I want to help protect and preserve the environment", "isCorrect": true},
+        {"text": "It seems like a trending career", "isCorrect": false},
+        {"text": "It was suggested by someone else", "isCorrect": false},
+        {"text": "I'm still figuring out my interests", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you enjoy studying biology, geography, and chemistry?",
+      "options": [
+        {"text": "Yes, I enjoy exploring how nature and science interact", "isCorrect": true},
+        {"text": "I like one or two of these subjects", "isCorrect": false},
+        {"text": "They're okay but not my favorite", "isCorrect": false},
+        {"text": "No, I find them difficult or uninteresting", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you concerned about climate change and pollution?",
+      "options": [
+        {"text": "Yes, I want to actively work toward environmental solutions", "isCorrect": true},
+        {"text": "I care, but don’t know much about it", "isCorrect": false},
+        {"text": "I’m neutral on these issues", "isCorrect": false},
+        {"text": "Not really concerned", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you enjoy spending time in nature and understanding ecosystems?",
+      "options": [
+        {"text": "Yes, I love learning how natural systems work", "isCorrect": true},
+        {"text": "Sometimes, but not often", "isCorrect": false},
+        {"text": "Not really, I prefer indoor activities", "isCorrect": false},
+        {"text": "No, I don't enjoy nature-based activities", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you good at analyzing data and identifying patterns?",
+      "options": [
+        {"text": "Yes, I enjoy interpreting environmental data", "isCorrect": true},
+        {"text": "I'm okay with data but prefer observation", "isCorrect": false},
+        {"text": "Data analysis is not my strong suit", "isCorrect": false},
+        {"text": "I prefer creative tasks over data work", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you want to work on sustainable development goals (SDGs)?",
+      "options": [
+        {"text": "Yes, I want to contribute to global sustainability", "isCorrect": true},
+        {"text": "I support the goals but don't know much about them", "isCorrect": false},
+        {"text": "I'm neutral about SDGs", "isCorrect": false},
+        {"text": "I’m not interested in them", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you interested in environmental law and policy?",
+      "options": [
+        {"text": "Yes, I want to understand and influence environmental laws", "isCorrect": true},
+        {"text": "Somewhat, but I prefer scientific work", "isCorrect": false},
+        {"text": "Not particularly", "isCorrect": false},
+        {"text": "No, I’m not interested in laws and policy", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Would you enjoy conducting fieldwork and research outdoors?",
+      "options": [
+        {"text": "Yes, I find fieldwork exciting and educational", "isCorrect": true},
+        {"text": "I prefer lab work", "isCorrect": false},
+        {"text": "Outdoor work is okay occasionally", "isCorrect": false},
+        {"text": "No, I dislike working outdoors", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Can you work patiently on long-term projects?",
+      "options": [
+        {"text": "Yes, I'm committed to long-term environmental impact", "isCorrect": true},
+        {"text": "Yes, but I like quicker results", "isCorrect": false},
+        {"text": "I prefer short-term tasks", "isCorrect": false},
+        {"text": "No, I get bored with long projects", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you interested in renewable energy sources?",
+      "options": [
+        {"text": "Yes, I want to help develop clean energy solutions", "isCorrect": true},
+        {"text": "Somewhat, but I need to learn more", "isCorrect": false},
+        {"text": "It's not a priority for me", "isCorrect": false},
+        {"text": "No, I’m not interested in energy topics", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Would you like to work for NGOs or government organizations?",
+      "options": [
+        {"text": "Yes, I want to make a real-world impact through policy or community work", "isCorrect": true},
+        {"text": "Maybe, but I’m open to corporate roles too", "isCorrect": false},
+        {"text": "Not sure yet", "isCorrect": false},
+        {"text": "No, I prefer private sector opportunities", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you enjoy educating others about the environment?",
+      "options": [
+        {"text": "Yes, I love spreading awareness", "isCorrect": true},
+        {"text": "Sometimes, depending on the topic", "isCorrect": false},
+        {"text": "I'm not comfortable teaching or public speaking", "isCorrect": false},
+        {"text": "No, I prefer working behind the scenes", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you willing to pursue higher studies or specializations?",
+      "options": [
+        {"text": "Yes, I want to deepen my knowledge in the field", "isCorrect": true},
+        {"text": "Maybe, if it's necessary for career growth", "isCorrect": false},
+        {"text": "Not really, I want to start working soon", "isCorrect": false},
+        {"text": "No, I don't plan to study further", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you care about wildlife conservation?",
+      "options": [
+        {"text": "Yes, protecting biodiversity is very important to me", "isCorrect": true},
+        {"text": "I care, but don't know much about it", "isCorrect": false},
+        {"text": "It's not one of my main concerns", "isCorrect": false},
+        {"text": "No, it’s not something I focus on", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you want to be part of solving global environmental challenges?",
+      "options": [
+        {"text": "Yes, I want to be part of the solution to global issues", "isCorrect": true},
+        {"text": "It depends on the role I can play", "isCorrect": false},
+        {"text": "Maybe, if I get the right opportunity", "isCorrect": false},
+        {"text": "No, global issues are too large to affect", "isCorrect": false}
+      ]
+    }
+  ]
+},
+{
+  "id": "biotechnology",
+  "title": "Biotechnology",
+  "questions": [
+    {
+      "text": "Why are you interested in biotechnology?",
+      "options": [
+        {"text": "I want to use science to solve real-world problems", "isCorrect": true},
+        {"text": "It sounds like a futuristic field", "isCorrect": false},
+        {"text": "It was recommended by someone else", "isCorrect": false},
+        {"text": "I'm still exploring options", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you enjoy biology and chemistry?",
+      "options": [
+        {"text": "Yes, I find living systems and chemical processes fascinating", "isCorrect": true},
+        {"text": "I like biology more than chemistry", "isCorrect": false},
+        {"text": "They're okay but not my favorites", "isCorrect": false},
+        {"text": "No, I find them challenging", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you interested in genetics and DNA research?",
+      "options": [
+        {"text": "Yes, I'm fascinated by how genes influence life", "isCorrect": true},
+        {"text": "Somewhat, but I don’t know much yet", "isCorrect": false},
+        {"text": "It’s too complex for me", "isCorrect": false},
+        {"text": "Not really interested", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you enjoy laboratory experiments?",
+      "options": [
+        {"text": "Yes, I like working in labs and analyzing results", "isCorrect": true},
+        {"text": "Sometimes, depending on the experiment", "isCorrect": false},
+        {"text": "I prefer theory over practicals", "isCorrect": false},
+        {"text": "No, I don’t like lab work", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you comfortable working with microorganisms and cells?",
+      "options": [
+        {"text": "Yes, I enjoy studying and manipulating biological systems", "isCorrect": true},
+        {"text": "I'm okay with it but have concerns", "isCorrect": false},
+        {"text": "I prefer studying larger organisms", "isCorrect": false},
+        {"text": "No, I find it uncomfortable", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Would you like to work in healthcare or agriculture innovation?",
+      "options": [
+        {"text": "Yes, I want to contribute to solving health or food challenges", "isCorrect": true},
+        {"text": "Maybe, depends on the role", "isCorrect": false},
+        {"text": "I’m not sure yet", "isCorrect": false},
+        {"text": "No, I’m not interested in these sectors", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you good at detailed and precise work?",
+      "options": [
+        {"text": "Yes, I pay attention to accuracy and details", "isCorrect": true},
+        {"text": "I try but sometimes miss small details", "isCorrect": false},
+        {"text": "I prefer creative or broad tasks", "isCorrect": false},
+        {"text": "No, I’m not detail-oriented", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you enjoy data analysis and scientific reports?",
+      "options": [
+        {"text": "Yes, I like interpreting scientific results", "isCorrect": true},
+        {"text": "Somewhat, if the data is interesting", "isCorrect": false},
+        {"text": "I prefer practical work over analysis", "isCorrect": false},
+        {"text": "No, I don’t enjoy data work", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you interested in biotechnology-related ethics (e.g., GMOs, cloning)?",
+      "options": [
+        {"text": "Yes, ethical debates in science intrigue me", "isCorrect": true},
+        {"text": "Somewhat, but I haven’t thought deeply about it", "isCorrect": false},
+        {"text": "I avoid controversial topics", "isCorrect": false},
+        {"text": "No, I’m not interested in ethical issues", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Would you like to contribute to disease research or vaccine development?",
+      "options": [
+        {"text": "Yes, I want to make a difference in global health", "isCorrect": true},
+        {"text": "Maybe, if I find the right opportunity", "isCorrect": false},
+        {"text": "I’m unsure about working in health", "isCorrect": false},
+        {"text": "No, I’m not interested in medical applications", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Can you work in sterile and controlled lab environments?",
+      "options": [
+        {"text": "Yes, I can follow strict lab protocols", "isCorrect": true},
+        {"text": "I can adapt to it", "isCorrect": false},
+        {"text": "I prefer open or natural settings", "isCorrect": false},
+        {"text": "No, I find such environments uncomfortable", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you like using technology and instruments for research?",
+      "options": [
+        {"text": "Yes, I enjoy using tools for scientific investigation", "isCorrect": true},
+        {"text": "Sometimes, but I prefer manual observation", "isCorrect": false},
+        {"text": "I’m not very comfortable with equipment", "isCorrect": false},
+        {"text": "No, I prefer theoretical learning", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Would you consider a career in bioinformatics or computational biology?",
+      "options": [
+        {"text": "Yes, I’m interested in combining biology with coding", "isCorrect": true},
+        {"text": "Maybe, if I learn more coding", "isCorrect": false},
+        {"text": "I prefer pure biology over tech integration", "isCorrect": false},
+        {"text": "No, coding isn’t for me", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you open to pursuing research or higher studies (like M.Sc or PhD)?",
+      "options": [
+        {"text": "Yes, I want to specialize and do impactful research", "isCorrect": true},
+        {"text": "Maybe, depending on job prospects", "isCorrect": false},
+        {"text": "I prefer to work immediately after graduation", "isCorrect": false},
+        {"text": "No, I don’t want to continue studies", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you want to contribute to solving food, energy, or health problems through science?",
+      "options": [
+        {"text": "Yes, I want to apply science to improve lives", "isCorrect": true},
+        {"text": "Depends on the field", "isCorrect": false},
+        {"text": "I prefer research for curiosity, not real-world impact", "isCorrect": false},
+        {"text": "No, I don't see myself in such roles", "isCorrect": false}
+      ]
+    }
+  ]
+},
+{
+  "id": "clinical_psychology",
+  "title": "Clinical Psychology",
+  "questions": [
+    {
+      "text": "Why are you interested in clinical psychology?",
+      "options": [
+        {"text": "I want to help people understand and manage their mental health", "isCorrect": true},
+        {"text": "Psychology seems interesting", "isCorrect": false},
+        {"text": "It was suggested by someone else", "isCorrect": false},
+        {"text": "I'm just exploring different options", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you have a strong interest in human behavior and emotions?",
+      "options": [
+        {"text": "Yes, I’m fascinated by how people think and feel", "isCorrect": true},
+        {"text": "Somewhat, depending on the topic", "isCorrect": false},
+        {"text": "I find it interesting but not deeply engaging", "isCorrect": false},
+        {"text": "No, I’m more interested in logical or technical subjects", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you empathetic and a good listener?",
+      "options": [
+        {"text": "Yes, I naturally listen and understand others’ feelings", "isCorrect": true},
+        {"text": "I try to be, but sometimes find it hard", "isCorrect": false},
+        {"text": "I prefer offering advice over listening", "isCorrect": false},
+        {"text": "No, I struggle with emotional conversations", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Can you maintain confidentiality and professionalism?",
+      "options": [
+        {"text": "Yes, I understand the importance of trust and ethics", "isCorrect": true},
+        {"text": "I can, but I might find it challenging", "isCorrect": false},
+        {"text": "I would prefer less responsibility in that area", "isCorrect": false},
+        {"text": "No, I don't think I could manage that", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you enjoy studying theories of the mind and behavior?",
+      "options": [
+        {"text": "Yes, I find psychological theories very engaging", "isCorrect": true},
+        {"text": "Some of them are interesting", "isCorrect": false},
+        {"text": "I prefer practical tasks over theory", "isCorrect": false},
+        {"text": "No, theories don’t interest me", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you comfortable dealing with emotional or mental health issues?",
+      "options": [
+        {"text": "Yes, I want to help people through difficult times", "isCorrect": true},
+        {"text": "I can handle it occasionally", "isCorrect": false},
+        {"text": "It may be too emotionally intense for me", "isCorrect": false},
+        {"text": "No, I would avoid such situations", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you have patience to work with long-term treatment plans?",
+      "options": [
+        {"text": "Yes, I understand that progress takes time", "isCorrect": true},
+        {"text": "Somewhat, but I prefer quick results", "isCorrect": false},
+        {"text": "I'm not sure I have that level of patience", "isCorrect": false},
+        {"text": "No, I prefer short-term engagements", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Would you be comfortable working with people of all ages and backgrounds?",
+      "options": [
+        {"text": "Yes, I respect and value diversity in clients", "isCorrect": true},
+        {"text": "I’m open to it but prefer working with specific age groups", "isCorrect": false},
+        {"text": "It may be a challenge for me", "isCorrect": false},
+        {"text": "No, I prefer a limited set of people", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you enjoy reading case studies and research papers?",
+      "options": [
+        {"text": "Yes, I find clinical cases and psychological research insightful", "isCorrect": true},
+        {"text": "Sometimes, depending on the topic", "isCorrect": false},
+        {"text": "I prefer learning from real experiences only", "isCorrect": false},
+        {"text": "No, I don’t enjoy academic reading", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Would you be open to pursuing higher education (M.A., M.Phil., PhD)?",
+      "options": [
+        {"text": "Yes, I want to specialize and deepen my expertise", "isCorrect": true},
+        {"text": "Maybe, if it’s necessary for my career", "isCorrect": false},
+        {"text": "I’m not very interested in more academic work", "isCorrect": false},
+        {"text": "No, I prefer starting work after my bachelor's", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you want to work in hospitals, clinics, or mental health centers?",
+      "options": [
+        {"text": "Yes, I want to help people through professional settings", "isCorrect": true},
+        {"text": "Maybe, depending on the type of work", "isCorrect": false},
+        {"text": "I prefer research or teaching", "isCorrect": false},
+        {"text": "No, I don’t want to work in healthcare settings", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you interested in psychological testing and diagnosis?",
+      "options": [
+        {"text": "Yes, I want to understand and use clinical assessments", "isCorrect": true},
+        {"text": "Somewhat, though I prefer therapy over testing", "isCorrect": false},
+        {"text": "Not particularly", "isCorrect": false},
+        {"text": "No, I’m not interested in that aspect", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Can you emotionally separate your personal life from your professional work?",
+      "options": [
+        {"text": "Yes, I understand how to manage emotional boundaries", "isCorrect": true},
+        {"text": "I try, but sometimes carry emotions home", "isCorrect": false},
+        {"text": "It’s hard for me to disconnect emotionally", "isCorrect": false},
+        {"text": "No, I struggle with emotional separation", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Would you enjoy helping clients set and achieve therapeutic goals?",
+      "options": [
+        {"text": "Yes, I want to support people in achieving mental well-being", "isCorrect": true},
+        {"text": "Maybe, depending on the client", "isCorrect": false},
+        {"text": "I prefer working independently from client progress", "isCorrect": false},
+        {"text": "No, I don’t enjoy goal-setting with others", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you believe in the importance of mental health awareness?",
+      "options": [
+        {"text": "Yes, mental health is just as important as physical health", "isCorrect": true},
+        {"text": "I agree, but don’t know how to contribute", "isCorrect": false},
+        {"text": "I think it's overemphasized at times", "isCorrect": false},
+        {"text": "No, I don’t focus much on mental health issues", "isCorrect": false}
+      ]
+    }
+  ]
+},
+{
+  "id": "nursing",
+  "title": "Nursing",
+  "questions": [
+    {
+      "text": "Why do you want to pursue a career in nursing?",
+      "options": [
+        {"text": "I want to care for others and support their health and recovery", "isCorrect": true},
+        {"text": "It’s a respected and stable profession", "isCorrect": false},
+        {"text": "My family encouraged me to choose nursing", "isCorrect": false},
+        {"text": "I’m still exploring career options", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you comfortable working in hospitals or clinical settings?",
+      "options": [
+        {"text": "Yes, I’m comfortable in medical environments", "isCorrect": true},
+        {"text": "I can adapt if needed", "isCorrect": false},
+        {"text": "I’m not sure yet", "isCorrect": false},
+        {"text": "No, I find clinical settings stressful", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you enjoy helping people with their health and well-being?",
+      "options": [
+        {"text": "Yes, I feel fulfilled when I help others recover or feel better", "isCorrect": true},
+        {"text": "I like helping people in general", "isCorrect": false},
+        {"text": "It depends on the situation", "isCorrect": false},
+        {"text": "Not really, I prefer less personal interaction", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Can you stay calm and focused in emergency situations?",
+      "options": [
+        {"text": "Yes, I can handle stress and think clearly under pressure", "isCorrect": true},
+        {"text": "Sometimes, but I need support", "isCorrect": false},
+        {"text": "I get nervous in emergencies", "isCorrect": false},
+        {"text": "No, I struggle in high-pressure situations", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you physically and mentally prepared for long shifts?",
+      "options": [
+        {"text": "Yes, I can manage both physical and emotional demands", "isCorrect": true},
+        {"text": "I can handle them occasionally", "isCorrect": false},
+        {"text": "I prefer regular working hours", "isCorrect": false},
+        {"text": "No, I need more rest and balance", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you value empathy and compassion in your work?",
+      "options": [
+        {"text": "Yes, I believe these are essential in caring professions", "isCorrect": true},
+        {"text": "I try to be empathetic when needed", "isCorrect": false},
+        {"text": "I’m more focused on tasks than emotions", "isCorrect": false},
+        {"text": "Not really, I keep emotional distance", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you interested in learning about human anatomy and physiology?",
+      "options": [
+        {"text": "Yes, I find the human body and its systems fascinating", "isCorrect": true},
+        {"text": "Somewhat, but it's not my strongest interest", "isCorrect": false},
+        {"text": "I prefer practical tasks to theoretical learning", "isCorrect": false},
+        {"text": "No, I find it difficult to understand", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Would you be okay performing basic medical procedures (e.g., injections, wound care)?",
+      "options": [
+        {"text": "Yes, I’m comfortable with hands-on patient care", "isCorrect": true},
+        {"text": "I can learn but might feel nervous at first", "isCorrect": false},
+        {"text": "I’d prefer to avoid such tasks", "isCorrect": false},
+        {"text": "No, I’m not comfortable with that", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you enjoy working closely with patients and families?",
+      "options": [
+        {"text": "Yes, I value building trust and relationships with patients", "isCorrect": true},
+        {"text": "I can, but I need personal space too", "isCorrect": false},
+        {"text": "I prefer minimal contact", "isCorrect": false},
+        {"text": "No, I’m not comfortable with close interaction", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you willing to work in shifts, including nights and weekends?",
+      "options": [
+        {"text": "Yes, I understand the demands of the profession", "isCorrect": true},
+        {"text": "I prefer day shifts but can adjust", "isCorrect": false},
+        {"text": "I would rather work fixed hours", "isCorrect": false},
+        {"text": "No, I need a regular schedule", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you want to contribute to improving public health?",
+      "options": [
+        {"text": "Yes, I want to make a difference in community health", "isCorrect": true},
+        {"text": "I’m more focused on individual care", "isCorrect": false},
+        {"text": "Public health is not my main interest", "isCorrect": false},
+        {"text": "No, I prefer clinical work only", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you open to lifelong learning and upskilling?",
+      "options": [
+        {"text": "Yes, I want to keep growing in my nursing career", "isCorrect": true},
+        {"text": "Maybe, if required", "isCorrect": false},
+        {"text": "I prefer to stop learning after graduation", "isCorrect": false},
+        {"text": "No, I don’t enjoy studying", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Would you like to specialize (e.g., pediatric, surgical, ICU nursing)?",
+      "options": [
+        {"text": "Yes, I want to develop deep skills in a specific area", "isCorrect": true},
+        {"text": "Maybe, I’ll decide later", "isCorrect": false},
+        {"text": "I prefer general nursing", "isCorrect": false},
+        {"text": "No, I don’t want to specialize", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you have the ability to stay emotionally strong while dealing with suffering?",
+      "options": [
+        {"text": "Yes, I can remain professional while being compassionate", "isCorrect": true},
+        {"text": "It’s difficult, but I try my best", "isCorrect": false},
+        {"text": "It affects me deeply", "isCorrect": false},
+        {"text": "No, I struggle emotionally in such situations", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you want to be part of a healthcare team and collaborate with doctors and staff?",
+      "options": [
+        {"text": "Yes, I believe teamwork improves patient outcomes", "isCorrect": true},
+        {"text": "I can collaborate when necessary", "isCorrect": false},
+        {"text": "I prefer working independently", "isCorrect": false},
+        {"text": "No, I don’t enjoy teamwork", "isCorrect": false}
+      ]
+    }
+  ]
+},
+{
+  "id": "bba",
+  "title": "Bachelor of Business Administration (BBA)",
+  "questions": [
+    {
+      "text": "Why are you interested in pursuing a BBA?",
+      "options": [
+        {"text": "I want to build a strong foundation in business and management", "isCorrect": true},
+        {"text": "It seems like a safe career option", "isCorrect": false},
+        {"text": "I’m not sure what else to choose", "isCorrect": false},
+        {"text": "My parents want me to pursue it", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you interested in leadership and managing people?",
+      "options": [
+        {"text": "Yes, I enjoy leading and organizing teams", "isCorrect": true},
+        {"text": "Sometimes, but I prefer working alone", "isCorrect": false},
+        {"text": "I find leadership roles overwhelming", "isCorrect": false},
+        {"text": "No, I avoid taking the lead", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you enjoy working with numbers and data (e.g., finance, accounting)?",
+      "options": [
+        {"text": "Yes, I find financial and numerical analysis interesting", "isCorrect": true},
+        {"text": "Only basic calculations, nothing complex", "isCorrect": false},
+        {"text": "I don’t enjoy numbers or math-related tasks", "isCorrect": false},
+        {"text": "I prefer creative work over number crunching", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you good at communicating and presenting ideas clearly?",
+      "options": [
+        {"text": "Yes, I am confident in speaking and presenting", "isCorrect": true},
+        {"text": "I can communicate, but public speaking is hard", "isCorrect": false},
+        {"text": "I prefer written over verbal communication", "isCorrect": false},
+        {"text": "No, I avoid presentations whenever possible", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Would you enjoy learning about marketing, HR, finance, and operations?",
+      "options": [
+        {"text": "Yes, I want to understand all areas of business", "isCorrect": true},
+        {"text": "Some subjects interest me more than others", "isCorrect": false},
+        {"text": "I’m only interested in one specific subject", "isCorrect": false},
+        {"text": "No, I prefer non-business topics", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you stay updated with business news and trends?",
+      "options": [
+        {"text": "Yes, I follow business news regularly", "isCorrect": true},
+        {"text": "Sometimes, if something major happens", "isCorrect": false},
+        {"text": "Rarely, I don’t find it interesting", "isCorrect": false},
+        {"text": "No, I avoid reading business-related content", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you comfortable working in teams and collaborating on projects?",
+      "options": [
+        {"text": "Yes, I enjoy team-based work and group projects", "isCorrect": true},
+        {"text": "I can work in teams if needed", "isCorrect": false},
+        {"text": "I prefer individual work", "isCorrect": false},
+        {"text": "No, I find group work stressful", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Would you like to start your own business someday?",
+      "options": [
+        {"text": "Yes, I have an entrepreneurial mindset", "isCorrect": true},
+        {"text": "Maybe, if I get a good idea", "isCorrect": false},
+        {"text": "I prefer working in a company", "isCorrect": false},
+        {"text": "No, running a business doesn’t interest me", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you enjoy analyzing problems and finding strategic solutions?",
+      "options": [
+        {"text": "Yes, I like solving business-related challenges", "isCorrect": true},
+        {"text": "Sometimes, depending on the topic", "isCorrect": false},
+        {"text": "I prefer straightforward tasks", "isCorrect": false},
+        {"text": "No, I don’t enjoy problem-solving", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you open to working in corporate environments?",
+      "options": [
+        {"text": "Yes, I look forward to working in the corporate world", "isCorrect": true},
+        {"text": "Maybe, but I’d also consider startups", "isCorrect": false},
+        {"text": "I prefer informal or freelance work", "isCorrect": false},
+        {"text": "No, I don't want to work in an office setting", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Would you be interested in business internships during college?",
+      "options": [
+        {"text": "Yes, I want practical experience to complement my studies", "isCorrect": true},
+        {"text": "Maybe, if I find something convenient", "isCorrect": false},
+        {"text": "I’d prefer focusing only on academics", "isCorrect": false},
+        {"text": "No, internships don’t interest me", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you interested in pursuing an MBA or higher studies in business later?",
+      "options": [
+        {"text": "Yes, I plan to continue studying business", "isCorrect": true},
+        {"text": "Maybe, depending on opportunities", "isCorrect": false},
+        {"text": "No, I want to finish education quickly and start working", "isCorrect": false},
+        {"text": "I don’t see the need for higher studies", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Can you handle competition and pressure in the business world?",
+      "options": [
+        {"text": "Yes, I’m motivated by challenges and competition", "isCorrect": true},
+        {"text": "I try, but it’s sometimes overwhelming", "isCorrect": false},
+        {"text": "I prefer low-pressure environments", "isCorrect": false},
+        {"text": "No, I don’t perform well under pressure", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you enjoy negotiating and convincing others?",
+      "options": [
+        {"text": "Yes, I’m confident in influencing and negotiating", "isCorrect": true},
+        {"text": "Somewhat, but I need to improve", "isCorrect": false},
+        {"text": "I avoid confrontation", "isCorrect": false},
+        {"text": "No, I’m uncomfortable in such situations", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you interested in understanding how organizations work?",
+      "options": [
+        {"text": "Yes, I want to learn how businesses operate and grow", "isCorrect": true},
+        {"text": "I’m only interested in certain departments", "isCorrect": false},
+        {"text": "I prefer smaller tasks, not the big picture", "isCorrect": false},
+        {"text": "No, organizational systems confuse me", "isCorrect": false}
+      ]
+    }
+  ]
+},
+{
+  "id": "mechanical_engineering",
+  "title": "Mechanical Engineering",
+  "questions": [
+    {
+      "text": "Are you interested in understanding how machines and mechanical systems work?",
+      "options": [
+        {"text": "Yes, I love learning about machines and mechanisms", "isCorrect": true},
+        {"text": "Somewhat, but not deeply", "isCorrect": false},
+        {"text": "Not really, I prefer other fields", "isCorrect": false},
+        {"text": "No, machines don’t interest me", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you enjoy solving complex problems and working on technical challenges?",
+      "options": [
+        {"text": "Yes, problem-solving excites me", "isCorrect": true},
+        {"text": "Sometimes, depending on the problem", "isCorrect": false},
+        {"text": "Not usually, I prefer simpler tasks", "isCorrect": false},
+        {"text": "No, I avoid technical challenges", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you comfortable with physics and mathematics?",
+      "options": [
+        {"text": "Yes, I enjoy physics and math", "isCorrect": true},
+        {"text": "I manage okay, but it’s challenging", "isCorrect": false},
+        {"text": "I struggle with these subjects", "isCorrect": false},
+        {"text": "No, I dislike physics and math", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you like working with your hands, like assembling or designing mechanical parts?",
+      "options": [
+        {"text": "Yes, practical work is enjoyable for me", "isCorrect": true},
+        {"text": "Sometimes, but I prefer theory", "isCorrect": false},
+        {"text": "Not really, I prefer computer-based work", "isCorrect": false},
+        {"text": "No, I don’t like hands-on work", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you interested in fields like automotive, aerospace, or manufacturing?",
+      "options": [
+        {"text": "Yes, these industries fascinate me", "isCorrect": true},
+        {"text": "Somewhat, but I’m open to other fields too", "isCorrect": false},
+        {"text": "Not particularly, I want to explore other areas", "isCorrect": false},
+        {"text": "No, I’m not interested in these industries", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Would you enjoy using software tools for design and simulation (e.g., CAD software)?",
+      "options": [
+        {"text": "Yes, I’m interested in computer-aided design", "isCorrect": true},
+        {"text": "I’m willing to learn if necessary", "isCorrect": false},
+        {"text": "I prefer manual drafting and sketches", "isCorrect": false},
+        {"text": "No, I’m not comfortable with such software", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you interested in researching and developing new mechanical technologies?",
+      "options": [
+        {"text": "Yes, innovation in mechanics excites me", "isCorrect": true},
+        {"text": "Sometimes, if it’s interesting", "isCorrect": false},
+        {"text": "Not much, I prefer existing technologies", "isCorrect": false},
+        {"text": "No, research doesn’t interest me", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you enjoy teamwork and collaborating on engineering projects?",
+      "options": [
+        {"text": "Yes, teamwork helps me learn and perform better", "isCorrect": true},
+        {"text": "I’m okay with teamwork when necessary", "isCorrect": false},
+        {"text": "I prefer working alone", "isCorrect": false},
+        {"text": "No, I avoid group work", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you comfortable working on site in workshops, factories, or labs?",
+      "options": [
+        {"text": "Yes, I like practical environments", "isCorrect": true},
+        {"text": "I can manage if needed", "isCorrect": false},
+        {"text": "I prefer classroom or office work", "isCorrect": false},
+        {"text": "No, I don’t like hands-on environments", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you willing to continuously update your knowledge as technology advances?",
+      "options": [
+        {"text": "Yes, lifelong learning is important to me", "isCorrect": true},
+        {"text": "I try, but it’s sometimes hard", "isCorrect": false},
+        {"text": "I prefer to stick to what I know", "isCorrect": false},
+        {"text": "No, I’m not interested in continuous learning", "isCorrect": false}
+      ]
+    }
+  ]
+},
+{
+  "id": "civil_engineering",
+  "title": "Civil Engineering",
+  "questions": [
+    {
+      "text": "Are you interested in designing and constructing infrastructure like roads, bridges, and buildings?",
+      "options": [
+        {"text": "Yes, I find infrastructure projects fascinating", "isCorrect": true},
+        {"text": "Somewhat, but I prefer smaller scale projects", "isCorrect": false},
+        {"text": "Not really, I prefer other fields", "isCorrect": false},
+        {"text": "No, construction doesn’t interest me", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you enjoy working with math and physics related to structures and materials?",
+      "options": [
+        {"text": "Yes, I enjoy applying math and physics practically", "isCorrect": true},
+        {"text": "I manage okay but it can be challenging", "isCorrect": false},
+        {"text": "I struggle with these subjects", "isCorrect": false},
+        {"text": "No, I dislike math and physics", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you interested in sustainable and eco-friendly construction methods?",
+      "options": [
+        {"text": "Yes, sustainability is very important to me", "isCorrect": true},
+        {"text": "I am somewhat interested", "isCorrect": false},
+        {"text": "Not really, I focus more on traditional methods", "isCorrect": false},
+        {"text": "No, sustainability doesn’t concern me", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Would you enjoy site visits and fieldwork at construction sites?",
+      "options": [
+        {"text": "Yes, I like being actively involved on-site", "isCorrect": true},
+        {"text": "I’m okay with occasional visits", "isCorrect": false},
+        {"text": "I prefer working only in the office", "isCorrect": false},
+        {"text": "No, I don’t want to go to construction sites", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you interested in using computer software like AutoCAD or Revit for designing structures?",
+      "options": [
+        {"text": "Yes, I enjoy working with design software", "isCorrect": true},
+        {"text": "I’m willing to learn if necessary", "isCorrect": false},
+        {"text": "I prefer manual drafting", "isCorrect": false},
+        {"text": "No, I’m not comfortable with such software", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you like solving problems related to soil, water flow, and foundation stability?",
+      "options": [
+        {"text": "Yes, geotechnical challenges interest me", "isCorrect": true},
+        {"text": "Somewhat, I find it interesting occasionally", "isCorrect": false},
+        {"text": "Not much, I prefer other areas", "isCorrect": false},
+        {"text": "No, these topics don’t interest me", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you comfortable working in teams with architects, engineers, and contractors?",
+      "options": [
+        {"text": "Yes, teamwork is essential and I enjoy it", "isCorrect": true},
+        {"text": "I’m okay with teamwork when needed", "isCorrect": false},
+        {"text": "I prefer working independently", "isCorrect": false},
+        {"text": "No, I avoid group work", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you have an eye for detail and quality assurance?",
+      "options": [
+        {"text": "Yes, I am very detail-oriented", "isCorrect": true},
+        {"text": "I try to pay attention but sometimes miss details", "isCorrect": false},
+        {"text": "I focus more on the big picture", "isCorrect": false},
+        {"text": "No, detail work is not my strength", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you interested in learning about construction project management?",
+      "options": [
+        {"text": "Yes, managing projects and teams excites me", "isCorrect": true},
+        {"text": "Somewhat, but I prefer technical roles", "isCorrect": false},
+        {"text": "Not really, I dislike management tasks", "isCorrect": false},
+        {"text": "No, I want to focus only on engineering design", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you enjoy analyzing data and making calculations for structural safety?",
+      "options": [
+        {"text": "Yes, I like precise calculations and safety analysis", "isCorrect": true},
+        {"text": "I do it when necessary", "isCorrect": false},
+        {"text": "I find it tedious", "isCorrect": false},
+        {"text": "No, I avoid detailed calculations", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Would you like to work on large-scale infrastructure projects like highways or dams?",
+      "options": [
+        {"text": "Yes, large infrastructure fascinates me", "isCorrect": true},
+        {"text": "I prefer smaller scale or urban projects", "isCorrect": false},
+        {"text": "I’m unsure which scale I prefer", "isCorrect": false},
+        {"text": "No, large projects don’t interest me", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you interested in the environmental impact of construction projects?",
+      "options": [
+        {"text": "Yes, minimizing environmental harm is important", "isCorrect": true},
+        {"text": "I think about it occasionally", "isCorrect": false},
+        {"text": "Not really, I focus on engineering aspects", "isCorrect": false},
+        {"text": "No, environmental impact doesn’t concern me", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you willing to work in outdoor conditions and various weather environments?",
+      "options": [
+        {"text": "Yes, I don’t mind working outside", "isCorrect": true},
+        {"text": "I can manage sometimes", "isCorrect": false},
+        {"text": "I prefer indoor work only", "isCorrect": false},
+        {"text": "No, I dislike outdoor work", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you like learning about materials like concrete, steel, and composites?",
+      "options": [
+        {"text": "Yes, material science interests me", "isCorrect": true},
+        {"text": "Somewhat, but I prefer other subjects", "isCorrect": false},
+        {"text": "Not really, materials don’t interest me", "isCorrect": false},
+        {"text": "No, I dislike material studies", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you interested in designing safe and resilient structures against natural disasters?",
+      "options": [
+        {"text": "Yes, I want to contribute to disaster-resistant engineering", "isCorrect": true},
+        {"text": "I find it interesting but difficult", "isCorrect": false},
+        {"text": "Not particularly", "isCorrect": false},
+        {"text": "No, it doesn’t interest me", "isCorrect": false}
+      ]
+    }
+  ]
+},
+{
+  "id": "fashion_design",
+  "title": "Fashion Design",
+  "questions": [
+    {
+      "text": "Do you enjoy sketching and drawing clothing designs?",
+      "options": [
+        {"text": "Yes, I love expressing ideas through sketches", "isCorrect": true},
+        {"text": "Sometimes, but I prefer other creative outlets", "isCorrect": false},
+        {"text": "Not really, drawing isn’t my strong suit", "isCorrect": false},
+        {"text": "No, I don’t like drawing", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you interested in learning about different fabrics and textiles?",
+      "options": [
+        {"text": "Yes, I find fabrics fascinating", "isCorrect": true},
+        {"text": "A little, but I’m more into the design itself", "isCorrect": false},
+        {"text": "Not much, fabrics don’t interest me", "isCorrect": false},
+        {"text": "No, I don’t want to study textiles", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you enjoy keeping up with the latest fashion trends?",
+      "options": [
+        {"text": "Yes, I always follow fashion news and styles", "isCorrect": true},
+        {"text": "Sometimes, when I have time", "isCorrect": false},
+        {"text": "Not really, I prefer classic styles", "isCorrect": false},
+        {"text": "No, fashion trends don’t interest me", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you interested in creating unique and innovative clothing designs?",
+      "options": [
+        {"text": "Yes, originality excites me", "isCorrect": true},
+        {"text": "I like to mix new ideas with traditional styles", "isCorrect": false},
+        {"text": "I prefer following existing designs", "isCorrect": false},
+        {"text": "No, I don’t want to design clothes", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you enjoy working with sewing machines and hand stitching?",
+      "options": [
+        {"text": "Yes, I like making garments by hand", "isCorrect": true},
+        {"text": "I’m willing to learn", "isCorrect": false},
+        {"text": "I prefer designing but not sewing", "isCorrect": false},
+        {"text": "No, I don’t want to sew", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you comfortable experimenting with colors and patterns?",
+      "options": [
+        {"text": "Yes, I enjoy playing with color combinations", "isCorrect": true},
+        {"text": "Sometimes, but I prefer simple styles", "isCorrect": false},
+        {"text": "Not really, I like neutral colors", "isCorrect": false},
+        {"text": "No, I avoid mixing colors", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Would you like to work in fashion shows and photo shoots?",
+      "options": [
+        {"text": "Yes, the fashion industry environment excites me", "isCorrect": true},
+        {"text": "Maybe, if given the chance", "isCorrect": false},
+        {"text": "I prefer working behind the scenes", "isCorrect": false},
+        {"text": "No, I don’t like that kind of work", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you have an interest in sustainable and ethical fashion?",
+      "options": [
+        {"text": "Yes, I want to create eco-friendly designs", "isCorrect": true},
+        {"text": "Somewhat, it’s important but not my main focus", "isCorrect": false},
+        {"text": "Not really, I focus on style more", "isCorrect": false},
+        {"text": "No, sustainability doesn’t concern me", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you detail-oriented when it comes to stitching and finishing garments?",
+      "options": [
+        {"text": "Yes, I pay great attention to detail", "isCorrect": true},
+        {"text": "I try my best but sometimes overlook details", "isCorrect": false},
+        {"text": "I prefer rough drafts and prototypes", "isCorrect": false},
+        {"text": "No, details are not my strength", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you like collaborating with models, photographers, and stylists?",
+      "options": [
+        {"text": "Yes, I enjoy working with creative teams", "isCorrect": true},
+        {"text": "Sometimes, but I prefer solo work", "isCorrect": false},
+        {"text": "Not much, I prefer working alone", "isCorrect": false},
+        {"text": "No, I avoid teamwork", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you interested in the history and cultural aspects of fashion?",
+      "options": [
+        {"text": "Yes, I love learning how fashion evolved", "isCorrect": true},
+        {"text": "Sometimes, when it’s relevant", "isCorrect": false},
+        {"text": "Not really, I focus on modern fashion", "isCorrect": false},
+        {"text": "No, history doesn’t interest me", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Would you like to create fashion collections for specific seasons or themes?",
+      "options": [
+        {"text": "Yes, developing collections sounds exciting", "isCorrect": true},
+        {"text": "I’m open to it but unsure", "isCorrect": false},
+        {"text": "Not really, I prefer one-off designs", "isCorrect": false},
+        {"text": "No, collections don’t interest me", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you enjoy researching new fashion technologies and materials?",
+      "options": [
+        {"text": "Yes, innovation in fashion fascinates me", "isCorrect": true},
+        {"text": "Sometimes, when it’s interesting", "isCorrect": false},
+        {"text": "Not really, I prefer traditional methods", "isCorrect": false},
+        {"text": "No, I avoid technical research", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you willing to work long hours during fashion events and deadlines?",
+      "options": [
+        {"text": "Yes, I am ready for the fast-paced fashion world", "isCorrect": true},
+        {"text": "I can manage if necessary", "isCorrect": false},
+        {"text": "I prefer regular hours", "isCorrect": false},
+        {"text": "No, I avoid stressful work", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you see yourself working as a fashion designer or stylist in the future?",
+      "options": [
+        {"text": "Yes, this is my dream career", "isCorrect": true},
+        {"text": "I’m exploring my options", "isCorrect": false},
+        {"text": "Not sure yet", "isCorrect": false},
+        {"text": "No, I want a different career", "isCorrect": false}
+      ]
+    }
+  ]
+},
+{
+  "id": "animation",
+  "title": "BA in Animation",
+  "questions": [
+    {
+      "text": "Do you enjoy drawing characters and creating storyboards?",
+      "options": [
+        {"text": "Yes, I love visual storytelling", "isCorrect": true},
+        {"text": "Sometimes, but I prefer other art forms", "isCorrect": false},
+        {"text": "Not really, I struggle with drawing", "isCorrect": false},
+        {"text": "No, I don’t like drawing", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you interested in learning 2D and 3D animation software?",
+      "options": [
+        {"text": "Yes, I’m excited to master animation tools", "isCorrect": true},
+        {"text": "Somewhat, if the software is user-friendly", "isCorrect": false},
+        {"text": "Not really, I prefer traditional animation", "isCorrect": false},
+        {"text": "No, I don’t want to use software", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you enjoy creating motion graphics and visual effects?",
+      "options": [
+        {"text": "Yes, I like making things move creatively", "isCorrect": true},
+        {"text": "Sometimes, but I’m still learning", "isCorrect": false},
+        {"text": "Not really, static images are more my thing", "isCorrect": false},
+        {"text": "No, motion graphics don’t interest me", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you comfortable working with digital drawing tablets?",
+      "options": [
+        {"text": "Yes, I’m familiar with tablets", "isCorrect": true},
+        {"text": "I’m willing to learn", "isCorrect": false},
+        {"text": "I prefer pen and paper", "isCorrect": false},
+        {"text": "No, I don’t want to use tablets", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you have an interest in storytelling and scriptwriting for animations?",
+      "options": [
+        {"text": "Yes, I love crafting stories", "isCorrect": true},
+        {"text": "Somewhat, I’m better at visuals", "isCorrect": false},
+        {"text": "Not really, I don’t enjoy writing", "isCorrect": false},
+        {"text": "No, I prefer just drawing", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you patient and detail-oriented in animating frames?",
+      "options": [
+        {"text": "Yes, I enjoy the meticulous process", "isCorrect": true},
+        {"text": "I try to be, but it’s challenging", "isCorrect": false},
+        {"text": "Not really, I prefer quick sketches", "isCorrect": false},
+        {"text": "No, I get frustrated with details", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you like collaborating with voice actors and sound designers?",
+      "options": [
+        {"text": "Yes, teamwork excites me", "isCorrect": true},
+        {"text": "Sometimes, but I prefer solo work", "isCorrect": false},
+        {"text": "Not much, I like working alone", "isCorrect": false},
+        {"text": "No, I avoid collaboration", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you interested in character design and development?",
+      "options": [
+        {"text": "Yes, I enjoy creating unique characters", "isCorrect": true},
+        {"text": "Somewhat, I prefer backgrounds", "isCorrect": false},
+        {"text": "Not really, character design is tough", "isCorrect": false},
+        {"text": "No, I don’t want to design characters", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you enjoy watching animated films and analyzing their techniques?",
+      "options": [
+        {"text": "Yes, I study animations closely", "isCorrect": true},
+        {"text": "Sometimes, for entertainment", "isCorrect": false},
+        {"text": "Not really, I’m not into animation films", "isCorrect": false},
+        {"text": "No, I don’t watch animated films", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you interested in learning about the history of animation?",
+      "options": [
+        {"text": "Yes, I want to understand its evolution", "isCorrect": true},
+        {"text": "Somewhat, if it’s relevant", "isCorrect": false},
+        {"text": "Not really, I focus on current trends", "isCorrect": false},
+        {"text": "No, history isn’t interesting to me", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you have good hand-eye coordination for frame-by-frame animation?",
+      "options": [
+        {"text": "Yes, I’m confident in my coordination", "isCorrect": true},
+        {"text": "I’m improving", "isCorrect": false},
+        {"text": "Not really, it’s difficult for me", "isCorrect": false},
+        {"text": "No, I struggle with coordination", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you willing to spend long hours perfecting animation projects?",
+      "options": [
+        {"text": "Yes, I’m committed to the craft", "isCorrect": true},
+        {"text": "If necessary, yes", "isCorrect": false},
+        {"text": "I prefer shorter projects", "isCorrect": false},
+        {"text": "No, I avoid long hours", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you enjoy experimenting with different animation styles?",
+      "options": [
+        {"text": "Yes, I like trying new techniques", "isCorrect": true},
+        {"text": "Sometimes, but I have a preferred style", "isCorrect": false},
+        {"text": "Not really, I stick to what I know", "isCorrect": false},
+        {"text": "No, I don’t like experimenting", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you interested in working in film, TV, or video game animation?",
+      "options": [
+        {"text": "Yes, that’s my dream industry", "isCorrect": true},
+        {"text": "Maybe, I’m open to options", "isCorrect": false},
+        {"text": "Not sure yet", "isCorrect": false},
+        {"text": "No, I want a different career", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you enjoy learning about software like Adobe Animate, Maya, or Blender?",
+      "options": [
+        {"text": "Yes, I’m eager to master these tools", "isCorrect": true},
+        {"text": "Somewhat, I’m still learning", "isCorrect": false},
+        {"text": "Not really, software intimidates me", "isCorrect": false},
+        {"text": "No, I don’t want to learn software", "isCorrect": false}
+      ]
+    }
+  ]
+},
+{
+  "id": "electrical_engineering",
+  "title": "Electrical Engineering",
+  "questions": [
+    {
+      "text": "Do you enjoy working with circuits, electricity, and electronics?",
+      "options": [
+        {"text": "Yes, I’m fascinated by how electrical systems work", "isCorrect": true},
+        {"text": "Sometimes, but I find it challenging", "isCorrect": false},
+        {"text": "Not really, I prefer other types of engineering", "isCorrect": false},
+        {"text": "No, I’m not interested in electricity", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you comfortable using tools like multimeters and oscilloscopes?",
+      "options": [
+        {"text": "Yes, I enjoy hands-on testing and measurement", "isCorrect": true},
+        {"text": "I’ve used them a little but want to learn more", "isCorrect": false},
+        {"text": "I’m not familiar but willing to learn", "isCorrect": false},
+        {"text": "No, I don’t like using technical equipment", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you have a strong understanding of physics and mathematics?",
+      "options": [
+        {"text": "Yes, I excel in these subjects", "isCorrect": true},
+        {"text": "I’m good but sometimes need help", "isCorrect": false},
+        {"text": "They’re challenging for me", "isCorrect": false},
+        {"text": "I struggle with math and physics", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you enjoy problem-solving and troubleshooting electrical systems?",
+      "options": [
+        {"text": "Yes, I find it rewarding to fix issues", "isCorrect": true},
+        {"text": "Sometimes, but I prefer designing rather than fixing", "isCorrect": false},
+        {"text": "I find troubleshooting frustrating", "isCorrect": false},
+        {"text": "No, I avoid dealing with problems", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you interested in renewable energy technologies?",
+      "options": [
+        {"text": "Yes, I want to work on sustainable energy solutions", "isCorrect": true},
+        {"text": "Somewhat, but I’m open to other fields", "isCorrect": false},
+        {"text": "Not particularly", "isCorrect": false},
+        {"text": "No, I’m not interested in renewables", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you prefer working on hardware design or software control systems?",
+      "options": [
+        {"text": "Hardware design - I like building physical devices", "isCorrect": true},
+        {"text": "Software - I enjoy programming and control systems", "isCorrect": false},
+        {"text": "Both interest me equally", "isCorrect": false},
+        {"text": "Neither appeals to me", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Can you work accurately under strict safety protocols?",
+      "options": [
+        {"text": "Yes, safety is a priority for me", "isCorrect": true},
+        {"text": "I try my best but sometimes overlook details", "isCorrect": false},
+        {"text": "I find safety rules restrictive", "isCorrect": false},
+        {"text": "No, I struggle with following strict protocols", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you interested in circuit simulation and design software?",
+      "options": [
+        {"text": "Yes, I enjoy using tools like MATLAB, LTSpice", "isCorrect": true},
+        {"text": "I have tried them but want to improve", "isCorrect": false},
+        {"text": "I’m not familiar but willing to learn", "isCorrect": false},
+        {"text": "No, I prefer manual design", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you like working in teams on technical projects?",
+      "options": [
+        {"text": "Yes, I find teamwork helps produce better results", "isCorrect": true},
+        {"text": "I prefer working independently", "isCorrect": false},
+        {"text": "Sometimes teamwork is difficult for me", "isCorrect": false},
+        {"text": "I prefer to work alone always", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you comfortable with continuous learning and adapting to new technology?",
+      "options": [
+        {"text": "Yes, I enjoy staying up-to-date with tech advances", "isCorrect": true},
+        {"text": "I learn when necessary but prefer stability", "isCorrect": false},
+        {"text": "Continuous learning feels overwhelming", "isCorrect": false},
+        {"text": "I avoid new technology when possible", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you have interest in microcontrollers and embedded systems?",
+      "options": [
+        {"text": "Yes, I find embedded systems fascinating", "isCorrect": true},
+        {"text": "I know a bit but want to learn more", "isCorrect": false},
+        {"text": "Not much interest currently", "isCorrect": false},
+        {"text": "No, I’m not interested in this area", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Would you like to work in power generation and distribution?",
+      "options": [
+        {"text": "Yes, I want to be involved in electricity supply systems", "isCorrect": true},
+        {"text": "I’m more interested in electronics", "isCorrect": false},
+        {"text": "I’m not sure yet", "isCorrect": false},
+        {"text": "No, I don’t want to work in this area", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Are you interested in robotics and automation?",
+      "options": [
+        {"text": "Yes, I want to design and control automated systems", "isCorrect": true},
+        {"text": "Somewhat, I’m curious about this field", "isCorrect": false},
+        {"text": "Not really", "isCorrect": false},
+        {"text": "No, I’m not interested", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Do you enjoy hands-on projects and building prototypes?",
+      "options": [
+        {"text": "Yes, practical work is exciting to me", "isCorrect": true},
+        {"text": "I like it occasionally", "isCorrect": false},
+        {"text": "I prefer theory over hands-on work", "isCorrect": false},
+        {"text": "No, I don’t enjoy practical projects", "isCorrect": false}
+      ]
+    },
+    {
+      "text": "Can you manage time effectively to meet project deadlines?",
+      "options": [
+        {"text": "Yes, I am disciplined and organized", "isCorrect": true},
+        {"text": "I sometimes struggle but improve over time", "isCorrect": false},
+        {"text": "Deadlines stress me out", "isCorrect": false},
+        {"text": "I find it hard to manage time well", "isCorrect": false}
+      ]
+    }
+  ]
+}
+]
+}
