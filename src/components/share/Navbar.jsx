@@ -26,8 +26,8 @@ const Navbar = () => {
 
   const getNavLinkClass = (isActive) => {
     return `btn rounded-2xl px-4 transition-all duration-100 ${isActive
-        ? 'btn-primary text-white shadow-md transform scale-105'
-        : 'btn-ghost text-gray-600 hover:bg-blue-50 hover:text-blue-600'
+      ? 'btn-primary text-white shadow-md transform scale-105'
+      : 'btn-ghost text-gray-600 hover:bg-blue-50 hover:text-blue-600'
       }`;
   };
 
@@ -66,6 +66,16 @@ const Navbar = () => {
               </NavLink>
             </li>
           )}
+          
+          <li>
+            <NavLink
+              to={user ? "/roadLayout/roadmap" : "/login"}
+              className={({ isActive }) => getNavLinkClass(isActive)}
+            >
+              Roadmap
+            </NavLink>
+          </li>
+
 
           {user && !isLoading && (
             results.length === 0 ? (
