@@ -9,7 +9,7 @@ import Aos from 'aos';
 import AuthProvider from './components/Provider/AuthProvider';
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-import { router } from './components/router/Router';
+import { router } from './components/router/router';
 
 
 Aos.init();

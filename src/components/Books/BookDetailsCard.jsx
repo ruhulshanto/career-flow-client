@@ -142,166 +142,166 @@ const BookDetailsCard = ({ book }) => {
                 </div>
                 {/* Book Details */}
                 {/* Book Details */}
-<div className="lg:w-3/5 w-full px-4 lg:px-0">
-    {/* Header Section */}
-    <div className="mb-8">
-        {/* Badges and Rating */}
-        <div className="flex flex-wrap items-center gap-3 mb-6">
-            <span className="badge badge-primary badge-lg px-4 py-2 rounded-full font-semibold">
-                {book.level || 'All Levels'}
-            </span>
-            <span className="badge badge-outline badge-lg px-4 py-2 rounded-full border-2 font-semibold">
-                {book.category || 'Education'}
-            </span>
-            <div className="flex items-center ml-auto bg-base-200 px-3 py-1 rounded-full">
-                <div className="flex items-center">
-                    {renderStars(book.rating)}
-                    <span className="ml-2 font-bold text-gray-900">{book.rating}/5</span>
-                </div>
-            </div>
-        </div>
-
-        {/* Title and Author */}
-        <div className="mb-6">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3 leading-tight">
-                {book.name}
-            </h1>
-            <p className="text-xl text-primary font-semibold mb-4 flex items-center">
-                <span className="w-1 h-6 bg-primary mr-3 rounded-full"></span>
-                by {book.author}
-            </p>
-        </div>
-
-        {/* Description */}
-        <div className="bg-gradient-to-r from-base-100 to-base-50 p-6 rounded-xl border-l-4 border-primary">
-            <p className="text-gray-700 leading-relaxed text-lg md:text-xl">
-                {book.description ||
-                    "A comprehensive guide that takes you from basic concepts to advanced techniques. Perfect for learners at all stages."}
-            </p>
-        </div>
-    </div>
-
-    {/* Features Grid */}
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-        {/* Book Information */}
-        <div className="bg-base-100 p-6 rounded-xl border shadow-sm hover:shadow-md transition-shadow duration-300">
-            <h3 className="flex items-center justify-center gap-2 font-bold text-lg mb-4 text-gray-800">
-                <LuNotebookPen className="text-primary text-xl" />
-                Book Information
-            </h3>
-            <div className="space-y-3">
-                {[
-                    { label: "Publisher:", value: book.publisher || "Tech Publications" },
-                    { label: "ISBN:", value: book.isbn || "978-3-16-148410-0" },
-                    { label: "Language:", value: "English" },
-                    { label: "Format:", value: "Paperback & Digital" }
-                ].map((item, index) => (
-                    <div key={index} className="flex justify-between items-center py-2 border-b border-gray-100 last:border-b-0">
-                        <span className="text-gray-600 font-medium">{item.label}</span>
-                        <span className="font-semibold text-gray-900 text-right">{item.value}</span>
-                    </div>
-                ))}
-            </div>
-        </div>
-
-        {/* Learning Outcomes */}
-        <div className="bg-base-100 p-6 rounded-xl border shadow-sm hover:shadow-md transition-shadow duration-300">
-            <h3 className="flex items-center justify-center gap-2 font-bold text-lg mb-4 text-gray-800">
-                <GiStairsGoal className="text-primary text-xl" />
-                Learning Outcomes
-            </h3>
-            <ul className="space-y-3">
-                {[
-                    "Master fundamental concepts",
-                    "Practical project experience", 
-                    "Industry best practices",
-                    "Advanced problem-solving skills"
-                ].map((outcome, index) => (
-                    <li key={index} className="flex items-start">
-                        <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                        <span className="text-gray-700">{outcome}</span>
-                    </li>
-                ))}
-            </ul>
-        </div>
-    </div>
-
-    {/* Table of Contents */}
-    <div className="mb-8">
-        <h3 className="flex items-center gap-2 font-bold text-xl mb-4 text-gray-800">
-            <MdOutlineContentPasteSearch className="text-primary text-2xl" />
-            Table of Contents
-        </h3>
-        <div className="bg-base-100 rounded-xl border shadow-sm divide-y divide-gray-100 overflow-hidden">
-            {[1, 2, 3, 4, 5].map((chapter) => (
-                <div key={chapter} className="flex justify-between items-center p-4 hover:bg-base-200 transition-colors duration-200 group">
-                    <div className="flex items-center">
-                        <span className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold mr-4">
-                            {chapter}
-                        </span>
-                        <span className="text-gray-700 font-medium group-hover:text-gray-900">
-                            Chapter {chapter}: Introduction to Key Concepts
-                        </span>
-                    </div>
-                    <span className="text-sm text-gray-500 bg-base-300 px-3 py-1 rounded-full">
-                        Pages {chapter * 20 - 19}-{chapter * 20}
-                    </span>
-                </div>
-            ))}
-        </div>
-    </div>
-
-    {/* Reviews Section */}
-    <div>
-        <div className="flex items-center justify-between mb-6">
-            <h3 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
-                <span className="text-yellow-500">🌟</span>
-                Customer Reviews
-            </h3>
-            <span className="text-sm text-gray-600 bg-base-200 px-3 py-1 rounded-full">
-                {reviews.length} review{reviews.length !== 1 ? 's' : ''}
-            </span>
-        </div>
-
-        <div className="space-y-4">
-            {reviews.map((review, index) => (
-                <div key={index} className="bg-base-100 p-6 rounded-xl border shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-3">
-                        <div className="flex items-center mb-2 sm:mb-0">
-                            <div className="flex items-center bg-base-200 px-3 py-1 rounded-full">
-                                {renderStars(review.rating)}
-                                <span className="ml-2 font-semibold text-gray-900">{review.rating}.0</span>
+                <div className="lg:w-3/5 w-full px-4 lg:px-0">
+                    {/* Header Section */}
+                    <div className="mb-8">
+                        {/* Badges and Rating */}
+                        <div className="flex flex-wrap items-center gap-3 mb-6">
+                            <span className="badge badge-primary badge-lg px-4 py-2 rounded-full font-semibold">
+                                {book.level || 'All Levels'}
+                            </span>
+                            <span className="badge badge-outline badge-lg px-4 py-2 rounded-full border-2 font-semibold">
+                                {book.category || 'Education'}
+                            </span>
+                            <div className="flex items-center ml-auto bg-base-200 px-3 py-1 rounded-full">
+                                <div className="flex items-center">
+                                    {renderStars(book.rating)}
+                                    <span className="ml-2 font-bold text-gray-900">{book.rating}/5</span>
+                                </div>
                             </div>
                         </div>
-                        <span className="text-sm text-gray-500 font-medium">
-                            {new Date(review.date).toLocaleDateString('en-US', { 
-                                year: 'numeric', 
-                                month: 'long', 
-                                day: 'numeric' 
-                            })}
-                        </span>
-                    </div>
-                    <p className="text-gray-700 mb-3 text-lg leading-relaxed">"{review.text}"</p>
-                    <p className="text-base text-gray-800 font-semibold">— {review.author}</p>
-                </div>
-            ))}
-        </div>
 
-        {reviews.length === 0 && (
-            <div className="text-center py-8 bg-base-100 rounded-xl border-2 border-dashed">
-                <div className="text-4xl mb-3">📚</div>
-                <p className="text-gray-500 text-lg font-medium">
-                    No reviews yet. Be the first to review this book!
-                </p>
-                <button className="mt-4 btn btn-primary btn-sm rounded-full px-6">
-                    Write a Review
-                </button>
-            </div>
-        )}
-    </div>
-</div>
+                        {/* Title and Author */}
+                        <div className="mb-6">
+                            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3 leading-tight">
+                                {book.name}
+                            </h1>
+                            <p className="text-xl text-primary font-semibold mb-4 flex items-center">
+                                <span className="w-1 h-6 bg-primary mr-3 rounded-full"></span>
+                                by {book.author}
+                            </p>
+                        </div>
+
+                        {/* Description */}
+                        <div className="bg-gradient-to-r from-base-100 to-base-50 p-6 rounded-xl border-l-4 border-primary">
+                            <p className="text-gray-700 leading-relaxed text-lg md:text-xl">
+                                {book.description ||
+                                    "A comprehensive guide that takes you from basic concepts to advanced techniques. Perfect for learners at all stages."}
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Features Grid */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        {/* Book Information */}
+                        <div className="bg-base-100 p-6 rounded-xl border shadow-sm hover:shadow-md transition-shadow duration-300">
+                            <h3 className="flex items-center justify-center gap-2 font-bold text-lg mb-4 text-gray-800">
+                                <LuNotebookPen className="text-primary text-xl" />
+                                Book Information
+                            </h3>
+                            <div className="space-y-3">
+                                {[
+                                    { label: "Publisher:", value: book.publisher || "Tech Publications" },
+                                    { label: "ISBN:", value: book.isbn || "978-3-16-148410-0" },
+                                    { label: "Language:", value: "English" },
+                                    { label: "Format:", value: "Paperback & Digital" }
+                                ].map((item, index) => (
+                                    <div key={index} className="flex justify-between items-center py-2 border-b border-gray-100 last:border-b-0">
+                                        <span className="text-gray-600 font-medium">{item.label}</span>
+                                        <span className="font-semibold text-gray-900 text-right">{item.value}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Learning Outcomes */}
+                        <div className="bg-base-100 p-6 rounded-xl border shadow-sm hover:shadow-md transition-shadow duration-300">
+                            <h3 className="flex items-center justify-center gap-2 font-bold text-lg mb-4 text-gray-800">
+                                <GiStairsGoal className="text-primary text-xl" />
+                                Learning Outcomes
+                            </h3>
+                            <ul className="space-y-3">
+                                {[
+                                    "Master fundamental concepts",
+                                    "Practical project experience",
+                                    "Industry best practices",
+                                    "Advanced problem-solving skills"
+                                ].map((outcome, index) => (
+                                    <li key={index} className="flex items-start">
+                                        <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                                        </svg>
+                                        <span className="text-gray-700">{outcome}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Table of Contents */}
+                    <div className="mb-8">
+                        <h3 className="flex items-center gap-2 font-bold text-xl mb-4 text-gray-800">
+                            <MdOutlineContentPasteSearch className="text-primary text-2xl" />
+                            Table of Contents
+                        </h3>
+                        <div className="bg-base-100 rounded-xl border shadow-sm divide-y divide-gray-100 overflow-hidden">
+                            {[1, 2, 3, 4, 5].map((chapter) => (
+                                <div key={chapter} className="flex justify-between items-center p-4 hover:bg-base-200 transition-colors duration-200 group">
+                                    <div className="flex items-center">
+                                        <span className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold mr-4">
+                                            {chapter}
+                                        </span>
+                                        <span className="text-gray-700 font-medium group-hover:text-gray-900">
+                                            Chapter {chapter}: Introduction to Key Concepts
+                                        </span>
+                                    </div>
+                                    <span className="text-sm text-gray-500 bg-base-300 px-3 py-1 rounded-full">
+                                        Pages {chapter * 20 - 19}-{chapter * 20}
+                                    </span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Reviews Section */}
+                    <div>
+                        <div className="flex items-center justify-between mb-6">
+                            <h3 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
+                                <span className="text-yellow-500">🌟</span>
+                                Students Reviews
+                            </h3>
+                            <span className="text-sm text-gray-600 bg-base-200 px-3 py-1 rounded-full">
+                                {reviews.length} review{reviews.length !== 1 ? 's' : ''}
+                            </span>
+                        </div>
+
+                        <div className="space-y-4">
+                            {reviews.map((review, index) => (
+                                <div key={index} className="bg-base-100 p-6 rounded-xl border shadow-sm hover:shadow-md transition-shadow duration-300">
+                                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-3">
+                                        <div className="flex items-center mb-2 sm:mb-0">
+                                            <div className="flex items-center bg-base-200 px-3 py-1 rounded-full">
+                                                {renderStars(review.rating)}
+                                                <span className="ml-2 font-semibold text-gray-900">{review.rating}.0</span>
+                                            </div>
+                                        </div>
+                                        <span className="text-sm text-gray-500 font-medium">
+                                            {new Date(review.date).toLocaleDateString('en-US', {
+                                                year: 'numeric',
+                                                month: 'long',
+                                                day: 'numeric'
+                                            })}
+                                        </span>
+                                    </div>
+                                    <p className="text-gray-700 mb-3 text-lg leading-relaxed">"{review.text}"</p>
+                                    <p className="text-base text-gray-800 font-semibold">— {review.author}</p>
+                                </div>
+                            ))}
+                        </div>
+
+                        {reviews.length === 0 && (
+                            <div className="text-center py-8 bg-base-100 rounded-xl border-2 border-dashed">
+                                <div className="text-4xl mb-3">📚</div>
+                                <p className="text-gray-500 text-lg font-medium">
+                                    No reviews yet. Be the first to review this book!
+                                </p>
+                                <button className="mt-4 btn btn-primary btn-sm rounded-full px-6">
+                                    Write a Review
+                                </button>
+                            </div>
+                        )}
+                    </div>
+                </div>
             </div>
         </div>
     );

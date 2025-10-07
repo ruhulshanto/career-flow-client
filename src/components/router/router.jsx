@@ -1,10 +1,8 @@
-
-import { createBrowserRouter, Navigate } from "react-router";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import Main from "../Layout/Main";
 import Home from "../Home/Home/Home";
 import NewsDetails from "../Home/News/NewsDetails";
 import Coverage from "../Coverage/Coverage";
-import AuthLayout from "../Layout/AuthLayout";
 import Register from "../Authentication/Register/Register";
 import Login from "../Authentication/Login/Login";
 import PrivateRoute from "../routes/PrivateRoute";
@@ -19,122 +17,154 @@ import AllNews from "../Home/News/AllNews";
 import ApplyInstructor from "../ApplyInstructor/ApplyInstructor";
 import AppliedInstructors from "../ApplyInstructor/AppliedInstructors";
 import AdminRoute from "../routes/AdminRoute";
-import AdminLayout from "../Layout/AdminLayout";
 import AllBooksPage from "../Books/AllBooksPage";
 import BookDetailsPage from "../Books/BookDetailsPage";
 import AboutUs from "../Home/AboutUs/AboutUs";
+import Forbidden from "../Forbidden/Forbidden";
+import AdminPanel from "../Admin/AdminPanel/AdminPanel";
 
 export const router = createBrowserRouter([
+  // ======================
+  // Main Layout Routes (Public)
+  // ======================
   {
     path: "/",
-    element: <Main></Main>,
+    element: <Main />,
     children: [
       {
         index: true,
-        Component: Home
+        element: <Home />,
       },
       {
-        path: '/news',
-        Component: AllNews
+        path: "news",
+        element: <AllNews />,
       },
       {
-        path: '/news/:id',
-        Component: NewsDetails
+        path: "news/:id",
+        element: <NewsDetails />,
       },
       {
-        path: 'coverage',
-        Component: Coverage,
-        loader: () => fetch('/serviceCenter.json').then(res => res.json())
-      },
-      // NEW: Add book routes under main layout
-      {
-        path: 'books/:careerId',
-        Component: AllBooksPage
+        path: "forbidden",
+        element: <Forbidden />,
       },
       {
-        path: 'books/:careerId/details/:bookId',
-        Component: BookDetailsPage
+        path: "coverage",
+        element: <Coverage />,
+        loader: () => fetch("/serviceCenter.json").then((res) => res.json()),
       },
       {
-        path: 'about',
-        Component: AboutUs
-      }
-    ]
+        path: "books/:careerId",
+        element: <AllBooksPage />,
+      },
+      {
+        path: "books/:careerId/details/:bookId",
+        element: <BookDetailsPage />,
+      },
+      {
+        path: "about",
+        element: <AboutUs />,
+      },
+    ],
   },
 
+  // ======================
+  // Authentication Routes (Public)
+  // ======================
   {
-    path: "/",
-    Component: AuthLayout,
-    children: [
-      {
-        path: 'login',
-        Component: Login
-      },
-      {
-        path: 'register',
-        Component: Register
-      },
-    ]
+    path: "login",
+    element: <Login />,
+  },
+  {
+    path: "register",
+    element: <Register />,
   },
 
+  // ======================
+  // Road Layout Routes (Protected - Quiz Flow)
+  // ======================
   {
     path: "/roadLayout",
-    element: <PrivateRoute><RoadLayout></RoadLayout></PrivateRoute>,
-    children: [
-      {
-        path: 'roadmap',
-        Component: Roadmap
-      },
-      {
-        path: 'chooseGoal',
-        Component: ChooseGoal
-      },
-      {
-        path: 'questions/:questionId',
-        Component: Questions
-      },
-      {
-        path: 'result/:score/:total',
-        Component: Result
-      },
-    ]
-  },
-
-  {
-    path: 'dashboard',
-    element: <PrivateRoute><DashboardLayout></DashboardLayout></PrivateRoute>,
-    children: [
-      {
-        path: 'myDashboard',
-        Component: Mydashboard
-      },
-      {
-        path: 'apply-instructor',
-        Component: ApplyInstructor
-      }
-    ]
-  },
-
-  {
-    path: "admin",
     element: (
-      <AdminRoute>
-        <AdminLayout></AdminLayout>
-      </AdminRoute>
+      <PrivateRoute>
+        <RoadLayout />
+      </PrivateRoute>
     ),
     children: [
       {
+        path: "roadmap",
+        element: <Roadmap />,
+      },
+      {
+        path: "chooseGoal",
+        element: <ChooseGoal />,
+      },
+      {
+        path: "questions/:questionId",
+        element: <Questions />,
+      },
+      {
+        path: "result/:score/:total",
+        element: <Result />,
+      },
+    ],
+  },
+
+  // ======================
+  //  Unified Dashboard Routes (Protected - Users + Admins)
+  // ======================
+  {
+    path: "dashboard",
+    element: (
+      <PrivateRoute>
+        <DashboardLayout />
+      </PrivateRoute>
+    ),
+    children: [
+      // Redirect /dashboard to /dashboard/myDashboard
+      {
         index: true,
-        element: <Navigate to="/admin/applicants" replace />
+        element: <Navigate to="/dashboard/myDashboard" replace />,
+      },
+    
+      {
+        path: "myDashboard",
+        element: <Mydashboard />,
       },
       {
-        path: "applicants",
-        element: <AppliedInstructors />
+        path: "apply-instructor",
+        element: <ApplyInstructor />,
+      },
+
+      // Admin-only routes (nested under dashboard)
+      {
+        path: "admin/applicants",
+        element: (
+          <AdminRoute>
+            <AppliedInstructors />
+          </AdminRoute>
+        ),
       },
       {
-        path: "dashboard",
-        element: <Mydashboard />
-      }
-    ]
-  }
+        path: "admin/adminPanel",
+        element: (
+          <AdminRoute>
+            <AdminPanel />
+          </AdminRoute>
+        ),
+      },
+    ],
+  },
+
+  // ======================
+  // Redirects & Fallbacks
+  // ======================
+  {
+    path: "admin",
+    element: <Navigate to="/dashboard/admin/adminPanel" replace />,
+  },
+  
+  {
+    path: "*",
+    element: <Navigate to="/" replace />,
+  },
 ]);

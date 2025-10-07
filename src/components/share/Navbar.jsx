@@ -21,86 +21,120 @@ const Navbar = () => {
   });
 
   const handleLogOut = () => {
-    logOut().catch(err => console.log(err.message));
+    logOut().catch((err) => console.log(err.message));
   };
 
   const getNavLinkClass = (isActive) => {
-    return `btn rounded-2xl px-4 transition-all duration-100 ${isActive
-      ? 'btn-primary text-white shadow-md transform scale-105'
-      : 'btn-ghost text-gray-600 hover:bg-blue-50 hover:text-blue-600'
-      }`;
+    return `btn rounded-2xl px-4 transition-all duration-100 ${
+      isActive
+        ? "btn-primary text-white shadow-md transform scale-105"
+        : "btn-ghost text-gray-600 hover:bg-blue-50 hover:text-blue-600"
+    }`;
+  };
+
+  // Determine what to show for user navigation
+  const getUserNavigation = () => {
+    if (!user) return null;
+    if (isLoading) return null;
+
+    return results.length === 0 ? (
+      <li>
+        <NavLink
+          to="/roadLayout/roadmap"
+          className={({ isActive }) => getNavLinkClass(isActive)}
+        >
+          Roadmap
+        </NavLink>
+      </li>
+    ) : (
+      <li>
+        <NavLink
+          to="/dashboard/myDashboard"
+          className={({ isActive }) => getNavLinkClass(isActive)}
+        >
+          My Dashboard
+        </NavLink>
+      </li>
+    );
   };
 
   return (
     <div className="navbar bg-gradient-to-r from-blue-50 to-indigo-50 border-b border-blue-200/50 px-4 py-3">
+      {/* Left - Logo */}
       <div className="navbar-start">
         <CareerLogo />
       </div>
 
+      {/* Center - Links */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal gap-1">
+          {/* Common links */}
           <li>
-            <NavLink to="/" className={({ isActive }) => getNavLinkClass(isActive)}>
+            <NavLink
+              to="/"
+              className={({ isActive }) => getNavLinkClass(isActive)}
+            >
               Home
             </NavLink>
           </li>
 
           <li>
-            <NavLink to="/coverage" className={({ isActive }) => getNavLinkClass(isActive)}>
+            <NavLink
+              to="/coverage"
+              className={({ isActive }) => getNavLinkClass(isActive)}
+            >
               Coverage
             </NavLink>
           </li>
 
+          {/* Apply Instructor - visible for all logged-in users */}
           {user?.email && (
             <li>
-              <NavLink to="/dashboard/apply-instructor" className={({ isActive }) => getNavLinkClass(isActive)}>
-                Apply Advisor
+              <NavLink
+                to="/dashboard/apply-instructor"
+                className={({ isActive }) => getNavLinkClass(isActive)}
+              >
+                Apply Instructor
               </NavLink>
             </li>
           )}
 
+          {/* Admin links */}
           {!adminLoading && isAdmin && (
-            <li>
-              <NavLink to="/admin/applicants" className={({ isActive }) => getNavLinkClass(isActive)}>
-                Applied Advisor
-              </NavLink>
-            </li>
-          )}
-          
-          <li>
-            <NavLink
-              to={user ? "/roadLayout/roadmap" : "/login"}
-              className={({ isActive }) => getNavLinkClass(isActive)}
-            >
-              Roadmap
-            </NavLink>
-          </li>
-
-
-          {user && !isLoading && (
-            results.length === 0 ? (
+            <>
               <li>
-                <NavLink to="/roadLayout/roadmap" className={({ isActive }) => getNavLinkClass(isActive)}>
-                  Roadmap
+                <NavLink
+                  to="/dashboard/admin/applicants"
+                  className={({ isActive }) => getNavLinkClass(isActive)}
+                >
+                  Applied Instructor
                 </NavLink>
               </li>
-            ) : (
               <li>
-                <NavLink to="/dashboard/myDashboard" className={({ isActive }) => getNavLinkClass(isActive)}>
-                  My Dashboard
+                <NavLink
+                  to="/dashboard/admin/adminPanel"
+                  className={({ isActive }) => getNavLinkClass(isActive)}
+                >
+                  Admin Panel
                 </NavLink>
               </li>
-            )
+            </>
           )}
+
+          {/* User links (Roadmap or Dashboard) */}
+          {getUserNavigation()}
         </ul>
       </div>
 
-      {/* Right Side - User Profile or Login */}
+      {/* Right - Profile or Auth Buttons */}
       <div className="navbar-end">
         {user ? (
           <div className="dropdown dropdown-end">
-            {/* Profile Avatar Button */}
-            <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar online hover:bg-blue-100 transition-colors">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-ghost btn-circle avatar online hover:bg-blue-100 transition-colors"
+            >
               <div className="w-10 rounded-full ring-2 ring-blue-200 ring-offset-2 ring-offset-blue-50">
                 <img
                   src={user?.photoURL || "/default-avatar.png"}
@@ -110,45 +144,66 @@ const Navbar = () => {
               </div>
             </div>
 
-            {/* Dropdown Menu */}
-            <ul tabIndex={0} className="menu menu-sm dropdown-content bg-white rounded-box z-50 mt-3 w-64 p-2 shadow-xl border border-blue-100">
-              {/* User Info Section */}
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content bg-white rounded-box z-50 mt-3 w-64 p-2 shadow-xl border border-blue-100"
+            >
+              {/* User Info */}
               <li className="px-4 py-3 border-b border-blue-100 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-t-box">
                 <div className="flex items-center gap-3">
                   <div className="avatar">
                     <div className="w-12 rounded-full ring-2 ring-white shadow-sm">
-                      <img src={user?.photoURL || "/default-avatar.png"} alt={user?.displayName || "User"} />
+                      <img
+                        src={user?.photoURL || "/default-avatar.png"}
+                        alt={user?.displayName || "User"}
+                      />
                     </div>
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="font-bold text-sm truncate text-gray-800">{user?.displayName || "User"}</p>
-                    <p className="text-xs text-gray-600 truncate">{user?.email}</p>
+                    <p className="font-bold text-sm truncate text-gray-800">
+                      {user?.displayName || "User"}
+                    </p>
+                    <p className="text-xs text-gray-600 truncate">
+                      {user?.email}
+                    </p>
                     {isAdmin && (
-                      <span className="badge badge-primary badge-xs mt-1 text-white">Admin</span>
+                      <span className="badge badge-primary badge-xs mt-1 text-white">
+                        Admin
+                      </span>
                     )}
                   </div>
                 </div>
               </li>
 
-              {/* Quick Stats */}
+              {/* Stats */}
               {!isLoading && results.length > 0 && (
                 <li className="px-4 py-2 border-b border-blue-100 bg-blue-25">
                   <div className="flex justify-between text-xs">
                     <span className="text-gray-600">Quizzes Taken:</span>
-                    <span className="font-semibold text-blue-600">{results.length}</span>
+                    <span className="font-semibold text-blue-600">
+                      {results.length}
+                    </span>
                   </div>
                   <div className="flex justify-between text-xs mt-1">
                     <span className="text-gray-600">Latest Score:</span>
                     <span className="font-semibold text-green-600">
-                      {((results[results.length - 1]?.score / results[results.length - 1]?.total) * 10).toFixed(1)}/10
+                      {(
+                        (results[results.length - 1]?.score /
+                          results[results.length - 1]?.total) *
+                        10
+                      ).toFixed(1)}
+                      /10
                     </span>
                   </div>
                 </li>
               )}
 
-              {/* Navigation Links with icons kept */}
+              {/* Dashboard */}
               <li>
-                <Link to="/dashboard/myDashboard" className="py-3 hover:bg-blue-50 rounded-lg transition-colors">
+                <Link
+                  to="/dashboard/myDashboard"
+                  className="py-3 hover:bg-blue-50 rounded-lg transition-colors"
+                >
                   <span className="flex items-center gap-3 text-gray-700">
                     <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
                       <span className="text-sm text-blue-600">📊</span>
@@ -158,31 +213,13 @@ const Navbar = () => {
                 </Link>
               </li>
 
-              <li>
-                <Link to="/dashboard/profile" className="py-3 hover:bg-blue-50 rounded-lg transition-colors">
-                  <span className="flex items-center gap-3 text-gray-700">
-                    <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
-                      <span className="text-sm text-green-600">👤</span>
-                    </div>
-                    <span>Edit Profile</span>
-                  </span>
-                </Link>
-              </li>
-
-              <li>
-                <Link to="/dashboard/settings" className="py-3 hover:bg-blue-50 rounded-lg transition-colors">
-                  <span className="flex items-center gap-3 text-gray-700">
-                    <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center">
-                      <span className="text-sm text-purple-600">⚙️</span>
-                    </div>
-                    <span>Settings</span>
-                  </span>
-                </Link>
-              </li>
-
+              {/* Admin Panel link in dropdown */}
               {isAdmin && (
                 <li>
-                  <Link to="/admin/dashboard" className="py-3 hover:bg-blue-50 rounded-lg transition-colors">
+                  <Link
+                    to="/dashboard/admin/adminPanel"
+                    className="py-3 hover:bg-blue-50 rounded-lg transition-colors"
+                  >
                     <span className="flex items-center gap-3 text-gray-700">
                       <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center">
                         <span className="text-sm text-red-600">🛠️</span>
@@ -193,7 +230,7 @@ const Navbar = () => {
                 </li>
               )}
 
-              {/* Logout Section */}
+              {/* Logout */}
               <li className="border-t border-blue-100 mt-2">
                 <button
                   onClick={handleLogOut}
@@ -211,36 +248,90 @@ const Navbar = () => {
           </div>
         ) : (
           <div className="flex gap-2">
-            <Link to="/login" className="btn btn-ghost btn-sm text-gray-600 hover:bg-blue-100 hover:text-blue-600">
+            <Link
+              to="/login"
+              className="btn btn-ghost btn-sm text-gray-600 hover:bg-blue-100 hover:text-blue-600"
+            >
               Login
             </Link>
-            <Link to="/register" className="btn btn-primary btn-sm bg-gradient-to-r from-blue-500 to-indigo-500 border-0 text-white hover:from-blue-600 hover:to-indigo-600">
+            <Link
+              to="/register"
+              className="btn btn-primary btn-sm bg-gradient-to-r from-blue-500 to-indigo-500 border-0 text-white hover:from-blue-600 hover:to-indigo-600"
+            >
               Sign Up
             </Link>
           </div>
         )}
       </div>
 
-      {/* Mobile Menu Button */}
+      {/* Mobile Menu */}
       <div className="lg:hidden">
         <div className="dropdown dropdown-end">
-          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle hover:bg-blue-100">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn btn-ghost btn-circle hover:bg-blue-100"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 text-gray-600"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
           </div>
-          <ul tabIndex={0} className="menu menu-sm dropdown-content bg-white rounded-box z-50 mt-3 w-56 p-2 shadow-xl border border-blue-100">
-            <li><Link to="/" className="py-2 hover:bg-blue-50 rounded-lg">Home</Link></li>
-            <li><Link to="/coverage" className="py-2 hover:bg-blue-50 rounded-lg">Coverage</Link></li>
-            {user?.email && <li><Link to="/dashboard/apply-instructor" className="py-2 hover:bg-blue-50 rounded-lg">Apply Advisor</Link></li>}
-            {!adminLoading && isAdmin && <li><Link to="/admin/applicants" className="py-2 hover:bg-blue-50 rounded-lg">Applied Advisor</Link></li>}
-            {user && !isLoading && (
-              results.length === 0 ? (
-                <li><Link to="/roadLayout/roadmap" className="py-2 hover:bg-blue-50 rounded-lg">Roadmap</Link></li>
-              ) : (
-                <li><Link to="/dashboard/myDashboard" className="py-2 hover:bg-blue-50 rounded-lg">My Dashboard</Link></li>
-              )
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content bg-white rounded-box z-50 mt-3 w-56 p-2 shadow-xl border border-blue-100"
+          >
+            <li>
+              <Link to="/" className="py-2 hover:bg-blue-50 rounded-lg">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/coverage" className="py-2 hover:bg-blue-50 rounded-lg">
+                Coverage
+              </Link>
+            </li>
+            {user?.email && (
+              <li>
+                <Link
+                  to="/dashboard/apply-instructor"
+                  className="py-2 hover:bg-blue-50 rounded-lg"
+                >
+                  Apply Instructor
+                </Link>
+              </li>
             )}
+            {!adminLoading && isAdmin && (
+              <>
+                <li>
+                  <Link
+                    to="/dashboard/admin/applicants"
+                    className="py-2 hover:bg-blue-50 rounded-lg"
+                  >
+                    Applied Instructor
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/dashboard/admin/adminPanel"
+                    className="py-2 hover:bg-blue-50 rounded-lg"
+                  >
+                    Admin Panel
+                  </Link>
+                </li>
+              </>
+            )}
+            {getUserNavigation()}
           </ul>
         </div>
       </div>

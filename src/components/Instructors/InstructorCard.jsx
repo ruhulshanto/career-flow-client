@@ -121,7 +121,7 @@ const InstructorCard = ({ instructor }) => {
                     <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
                         <h2 className="text-3xl font-bold text-gray-900 mb-2">{instructor.name}</h2>
                         <p className="text-blue-600 font-semibold text-lg mb-4">{instructor.specialization}</p>
-                        
+
                         <div className="flex items-center gap-2 mb-6">
                             {renderStars(Math.floor(instructor.rating))}
                             <span className="text-gray-600 font-medium">{instructor.rating}/5 Rating</span>
@@ -136,8 +136,8 @@ const InstructorCard = ({ instructor }) => {
                                     About Me
                                 </h3>
                                 <p className="text-gray-600 leading-relaxed">
-                                    Passionate educator with {instructor.experience} of experience in {instructor.specialization}. 
-                                    Committed to helping students achieve their learning goals through practical, real-world projects 
+                                    Passionate educator with {instructor.experience} of experience in {instructor.specialization}.
+                                    Committed to helping students achieve their learning goals through practical, real-world projects
                                     and personalized guidance.
                                 </p>
                             </div>
@@ -151,7 +151,7 @@ const InstructorCard = ({ instructor }) => {
                                     Teaching Style
                                 </h3>
                                 <p className="text-gray-600 leading-relaxed">
-                                    I believe in learning by doing. My courses focus on hands-on projects that reinforce theoretical concepts. 
+                                    I believe in learning by doing. My courses focus on hands-on projects that reinforce theoretical concepts.
                                     I encourage questions and discussion to ensure every student fully understands the material.
                                 </p>
                             </div>
@@ -162,7 +162,7 @@ const InstructorCard = ({ instructor }) => {
                             <h3 className="text-xl font-semibold mb-3 text-gray-800">Specializations</h3>
                             <div className="flex flex-wrap gap-2">
                                 {["Web Development", "JavaScript", "React.js", "Node.js", "MongoDB", "API Design"].map((skill, index) => (
-                                    <span 
+                                    <span
                                         key={index}
                                         className="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-4 py-2 rounded-full text-sm font-medium border border-blue-300"
                                     >

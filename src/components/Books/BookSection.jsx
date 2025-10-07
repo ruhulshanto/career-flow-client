@@ -13,7 +13,7 @@ const BookSection = ({ latestResult, rating }) => {
 
     const careerId = latestResult.careerId || "doctor";
 
-    const { data: booksData, isLoading, error } = useQuery({
+    const { data: booksData, isLoading } = useQuery({
         queryKey: ["books", careerId],
         queryFn: async () => {
             try {
@@ -21,7 +21,8 @@ const BookSection = ({ latestResult, rating }) => {
                 return res.data;
             } catch (err) {
                 console.error("Error fetching books:", err);
-                throw err;
+                // 🔥 FIX: Return empty structure instead of throwing
+                return { books: { level1: [], level2: [], level3: [] } };
             }
         },
         enabled: true,
@@ -191,6 +192,10 @@ const BookSection = ({ latestResult, rating }) => {
         navigate(`/books/${careerId}`);
     };
 
+    // 🔹 IMPROVED: Better check for empty books data
+    const hasBooks = booksData?.books && 
+        Object.values(booksData.books).some(books => Array.isArray(books) && books.length > 0);
+
     if (isLoading) {
         return (
             <div className="flex justify-center items-center my-16">
@@ -200,20 +205,13 @@ const BookSection = ({ latestResult, rating }) => {
         );
     }
 
-    if (error) {
-        return (
-            <div className="my-8 p-6 bg-red-50 rounded-2xl border border-red-200">
-                <h2 className="text-2xl font-bold mb-3 text-red-800">Recommended Books</h2>
-                <p className="text-red-700">Error loading books: {error.message}</p>
-            </div>
-        );
-    }
-
-    if (!booksData || !booksData.books) {
+    if (!hasBooks) {
         return (
             <div className="my-8 p-6 bg-yellow-50 rounded-2xl border border-yellow-200">
                 <h2 className="text-2xl font-bold mb-3 text-yellow-800">Recommended Books</h2>
-                <p className="text-yellow-700">No books found for this career category.</p>
+                <p className="text-yellow-700">
+                    No books available for {careerId.replace(/-/g, ' ')} at the moment.
+                </p>
             </div>
         );
     }
@@ -233,8 +231,8 @@ const BookSection = ({ latestResult, rating }) => {
                 <div className="flex items-center justify-between mb-4">
                     <h3 className="font-semibold text-gray-900">Your Current Level</h3>
                     <span className={`text-lg font-bold ${numericRating < 5 ? 'text-green-600' :
-                            numericRating < 7 ? 'text-amber-600' :
-                                'text-red-600'
+                        numericRating < 7 ? 'text-amber-600' :
+                            'text-red-600'
                         }`}>
                         {numericRating < 5 ? 'Beginner' : numericRating < 7 ? 'Intermediate' : 'Advanced'}
                     </span>
@@ -251,8 +249,8 @@ const BookSection = ({ latestResult, rating }) => {
                         <div className="w-full bg-gray-200 rounded-full h-4">
                             <div
                                 className={`h-4 rounded-full transition-all duration-700 ease-out ${numericRating < 5 ? 'bg-gradient-to-r from-green-400 to-green-500 w-1/3' :
-                                        numericRating < 7 ? 'bg-gradient-to-r from-amber-400 to-amber-500 w-2/3' :
-                                            'bg-gradient-to-r from-red-400 to-red-500 w-full'
+                                    numericRating < 7 ? 'bg-gradient-to-r from-amber-400 to-amber-500 w-2/3' :
+                                        'bg-gradient-to-r from-red-400 to-red-500 w-full'
                                     }`}
                             ></div>
                         </div>
@@ -260,8 +258,8 @@ const BookSection = ({ latestResult, rating }) => {
                         {/* Current Position Marker */}
                         <div
                             className={`absolute top-1/2 transform -translate-y-1/2 w-6 h-6 rounded-full border-4 border-white shadow-lg ${numericRating < 5 ? 'bg-green-500 left-1/4' :
-                                    numericRating < 7 ? 'bg-amber-500 left-2/3' :
-                                        'bg-red-500 left-full -ml-3'
+                                numericRating < 7 ? 'bg-amber-500 left-2/3' :
+                                    'bg-red-500 left-full -ml-3'
                                 }`}
                             style={{
                                 left: numericRating < 5 ? '33%' :

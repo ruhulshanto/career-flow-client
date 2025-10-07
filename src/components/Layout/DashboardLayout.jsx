@@ -1,229 +1,184 @@
-
-import { Link, Outlet, useLocation, useNavigate } from "react-router";
-import CareerLogo from "../Home/CareerLogo/CareerLogo";
-import useAuth from "../hook/useAuth";
-import useAxiosSecure from "../hook/useAxiosSecure";
-import { useQuery } from "@tanstack/react-query";
+import { NavLink, Outlet, useNavigate } from 'react-router';
+import CareerLogo from '../Home/CareerLogo/CareerLogo';
 import {
-  FaHome,
-  FaTachometerAlt,
-  FaSignOutAlt,
-  FaUser,
-  FaChartLine,
-  FaBars
-} from "react-icons/fa";
+    FaHome,
+    FaTachometerAlt,
+    FaUser,
+    FaChartLine,
+    FaUsers,
+    FaUserShield,
+    FaSignOutAlt,
+    FaBars,
+} from 'react-icons/fa';
+import { useState } from 'react';
+import { useQuery } from '@tanstack/react-query';
+import useAuth from '../hook/useAuth';
+import useUserRole from '../hook/useUserRole';
+import useAxiosSecure from '../hook/useAxiosSecure';
 
 const DashboardLayout = () => {
-  const { user, logOut } = useAuth();
-  const location = useLocation();
-  const navigate = useNavigate();
-  const axiosSecure = useAxiosSecure();
+    const { user, logOut } = useAuth();
+    const navigate = useNavigate();
+    const { role, roleLoading } = useUserRole();
+    const [isOpen, setIsOpen] = useState(false);
+    const axiosSecure = useAxiosSecure();
 
-  const { data: results = [] } = useQuery({
-    queryKey: ["userResults", user?.email],
-    queryFn: async () => {
-      if (!user?.email) return [];
-      const res = await axiosSecure.get(`/results/${user.email}`);
-      return res.data;
-    },
-    enabled: !!user?.email,
-  });
+    const { data: results = [] } = useQuery({
+        queryKey: ["userResults", user?.email],
+        queryFn: async () => {
+            if (!user?.email) return [];
+            const res = await axiosSecure.get(`/results/${user.email}`);
+            return res.data;
+        },
+        enabled: !!user?.email,
+    });
 
-  const handleLogout = () => {
-    logOut()
-      .then(() => navigate("/"))
-      .catch(err => console.log(err.message));
-  };
+    const handleLogout = () => {
+        logOut()
+            .then(() => navigate("/"))
+            .catch(err => console.log(err.message));
+    };
 
-  // Function to render user avatar
-  const renderUserAvatar = (size = 'w-12') => {
-    if (user?.photoURL) {
-      return (
-        <div className={`avatar ${size}`}>
-          <div className="rounded-full">
-            <img
-              src={user.photoURL}
-              alt={user.displayName || 'User'}
-              className="object-cover w-full h-full"
-              onError={(e) => {
-                // Hide the image and show fallback
-                e.target.style.display = 'none';
-              }}
-            />
-            {/* Fallback avatar - always rendered but hidden by default */}
-            <div className="absolute inset-0 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold text-lg">
-              {user?.displayName?.charAt(0) || 'U'}
-            </div>
-          </div>
-        </div>
-      );
-    } else {
-      return (
-        <div className={`avatar ${size}`}>
-          <div className="bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold text-lg w-full h-full">
-            {user?.displayName?.charAt(0) || 'U'}
-          </div>
-        </div>
-      );
-    }
-  };
+    // Active button class
+    const navButtonClass = ({ isActive }) =>
+        `flex items-center gap-3 justify-start px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 transform ${isActive ? 'bg-blue-600 text-white shadow-md scale-105' : 'text-gray-700 hover:bg-gray-100 hover:scale-105'}`;
 
-  const menuItems = [
-    { path: "/", label: "Home", icon: FaHome },
-    { path: "/dashboard/myDashboard", label: "My Dashboard", icon: FaTachometerAlt },
-    { path: "/dashboard/apply-instructor", label: "Apply Advisor", icon: FaUser },
-    ...(results.length > 0 ? [{ path: "/roadLayout/roadmap", label: "Requiz", icon: FaChartLine }] : [])
-  ];
-
-  const isActive = (path) => location.pathname === path;
-
-  return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Mobile Header */}
-      <header className="lg:hidden bg-white shadow-sm border-b">
-        <div className="flex items-center justify-between p-4">
-          <div className="flex items-center gap-3">
-            <label htmlFor="dashboard-drawer" className="btn btn-ghost btn-circle drawer-button">
-              <FaBars className="text-lg" />
-            </label>
-            <CareerLogo />
-          </div>
-          <div className="flex items-center gap-3">
-            {renderUserAvatar('w-8 h-8')}
-          </div>
-        </div>
-      </header>
-
-      <div className="flex">
-        {/* Desktop Sidebar */}
-        <aside className="hidden lg:flex lg:flex-col lg:w-72 lg:fixed lg:inset-y-0 bg-white border-r border-gray-200 shadow-sm z-40">
-          {/* Logo Section */}
-          <div className="flex items-center justify-center p-6 border-b border-gray-200">
-            <CareerLogo />
-          </div>
-
-          {/* User Profile */}
-          <div className="p-6 border-b border-gray-200">
-            <div className="flex items-center gap-3">
-              <div>
-                {
-                  user?.photoURL ? <><img className="w-12 h-12 rounded-full" src={user?.photoURL} /></> : <>{renderUserAvatar('w-12 h-12')}</>
-                }
-
-              </div>
-
-              <div className="flex-1 min-w-0">
-                <p className="font-semibold text-gray-900 truncate">{user?.displayName || 'User'}</p>
-                <p className="text-gray-500 text-sm truncate">{user?.email}</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Navigation Menu */}
-          <nav className="flex-1 p-4 space-y-2">
-            {menuItems.map((item) => {
-              const IconComponent = item.icon;
-              return (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className={`flex items-center gap-3 p-3 rounded-lg transition-all duration-200 ${isActive(item.path)
-                    ? 'bg-blue-50 text-blue-600 border border-blue-200'
-                    : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'
-                    }`}
-                >
-                  <IconComponent className="text-lg flex-shrink-0" />
-                  <span className="font-medium">{item.label}</span>
-                </Link>
-              );
-            })}
-          </nav>
-
-          {/* Logout Button */}
-          <div className="p-4 border-t border-gray-200">
-            <button
-              onClick={handleLogout}
-              className="flex items-center gap-3 p-3 rounded-lg text-red-600 hover:bg-red-50 w-full transition-all duration-200"
+    return (
+        <div className="flex h-screen bg-gray-50 overflow-hidden">
+            {/* Sidebar */}
+            <aside className={`fixed top-0 left-0 h-full w-64 bg-white shadow-lg z-50 flex flex-col justify-between transition-transform duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0`}
             >
-              <FaSignOutAlt className="text-lg flex-shrink-0" />
-              <span className="font-medium">Logout</span>
-            </button>
-          </div>
-        </aside>
+                <div className="p-5">
+                    {/* Logo */}
+                    <div className="mb-6 flex justify-center">
+                        <CareerLogo />
+                    </div>
 
-        {/* Mobile Sidebar Drawer */}
-        <div className="drawer lg:hidden z-50">
-          <input id="dashboard-drawer" type="checkbox" className="drawer-toggle" />
-          <div className="drawer-side">
-            <label htmlFor="dashboard-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
-            <div className="menu bg-white min-h-full w-80 p-4 border-r border-gray-200">
-              <div className="flex items-center justify-between mb-8">
-                <CareerLogo />
-                <label htmlFor="dashboard-drawer" className="btn btn-ghost btn-circle drawer-button">
-                  ✕
-                </label>
-              </div>
+                    {/* User Info */}
+                    <div className="mb-6 p-4 bg-blue-50 rounded-lg">
+                        <div className="flex items-center gap-3">
+                            <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
+                                {user?.photoURL ? (
+                                    <img 
+                                        src={user.photoURL} 
+                                        alt={user.displayName} 
+                                        className="w-10 h-10 rounded-full object-cover"
+                                    />
+                                ) : (
+                                    <span className="text-blue-600 font-bold text-lg">
+                                        {user?.displayName?.charAt(0) || 'U'}
+                                    </span>
+                                )}
+                            </div>
+                            <div className="flex-1 min-w-0">
+                                <p className="font-semibold text-sm text-gray-800 truncate">
+                                    {user?.displayName || 'User'}
+                                </p>
+                                <p className="text-xs text-gray-600 truncate">{user?.email}</p>
+                                {!roleLoading && role && (
+                                    <span className={`inline-flex items-center gap-1 text-xs font-semibold px-2 py-0.5 rounded-full mt-1 ${
+                                        role === 'admin' 
+                                            ? 'bg-red-100 text-red-800' 
+                                            : 'bg-green-100 text-green-800'
+                                    }`}>
+                                        {role.charAt(0).toUpperCase() + role.slice(1)}
+                                    </span>
+                                )}
+                            </div>
+                        </div>
+                    </div>
 
-              {/* Mobile User Profile */}
-              <div className="p-4 mb-6 bg-gray-50 rounded-lg">
-                <div className="flex items-center gap-3">
-                  {renderUserAvatar('w-10 h-10')}
-                  <div className="flex-1 min-w-0">
-                    <p className="font-semibold text-gray-900 truncate">{user?.displayName || 'User'}</p>
-                    <p className="text-gray-500 text-sm truncate">{user?.email}</p>
-                  </div>
+                    <div className="flex flex-col gap-2">
+                        {/* Common Links for all users */}
+                        <NavLink to="/" end className={navButtonClass}>
+                            <FaHome className="text-lg" />
+                            <span>Home</span>
+                        </NavLink>
+
+                        <NavLink to="/dashboard/myDashboard" end className={navButtonClass}>
+                            <FaTachometerAlt className="text-lg" />
+                            <span>My Dashboard</span>
+                        </NavLink>
+
+                        <NavLink to="/dashboard/apply-instructor" className={navButtonClass}>
+                            <FaUser className="text-lg" />
+                            <span>Apply Instructor</span>
+                        </NavLink>
+
+                        {/* Roadmap or Requiz based on quiz history */}
+                        {results.length === 0 ? (
+                            <NavLink to="/roadLayout/roadmap" className={navButtonClass}>
+                                <FaChartLine className="text-lg" />
+                                <span>Roadmap</span>
+                            </NavLink>
+                        ) : (
+                            <NavLink to="/roadLayout/roadmap" className={navButtonClass}>
+                                <FaChartLine className="text-lg" />
+                                <span>Requiz</span>
+                            </NavLink>
+                        )}
+
+                        {/* Admin Links */}
+                        {!roleLoading && role === 'admin' && (
+                            <>
+                                <div className="border-t border-gray-200 my-2 pt-2">
+                                    <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider px-4 mb-2">
+                                        Admin Panel
+                                    </p>
+                                    
+                                    <NavLink to="/dashboard/admin/applicants" className={navButtonClass}>
+                                        <FaUsers className="text-lg" />
+                                        <span>Applied Instructors</span>
+                                    </NavLink>
+
+                                    <NavLink to="/dashboard/admin/adminPanel" className={navButtonClass}>
+                                        <FaUserShield className="text-lg" />
+                                        <span>Admin Panel</span>
+                                    </NavLink>
+                                </div>
+                            </>
+                        )}
+                    </div>
                 </div>
-              </div>
 
-              {/* Mobile Navigation */}
-              <nav className="space-y-2">
-                {menuItems.map((item) => {
-                  const IconComponent = item.icon;
-                  return (
-                    <Link
-                      key={item.path}
-                      to={item.path}
-                      onClick={() => {
-                        const drawer = document.getElementById('dashboard-drawer');
-                        if (drawer) drawer.checked = false;
-                      }}
-                      className={`flex items-center gap-3 p-3 rounded-lg transition-all duration-200 ${isActive(item.path)
-                        ? 'bg-blue-50 text-blue-600 border border-blue-200'
-                        : 'text-gray-700 hover:bg-gray-100'
-                        }`}
+                {/* Logout */}
+                <div className="p-5 border-t">
+                    <button
+                        onClick={handleLogout}
+                        className="w-full flex items-center justify-center gap-2 py-3 rounded-lg bg-red-500 text-white font-semibold shadow-md hover:bg-red-600 hover:scale-105 transition-all duration-200 transform active:scale-95"
                     >
-                      <IconComponent className="text-lg flex-shrink-0" />
-                      <span className="font-medium">{item.label}</span>
-                    </Link>
-                  );
-                })}
-              </nav>
+                        <FaSignOutAlt />
+                        Logout
+                    </button>
+                </div>
+            </aside>
 
-              {/* Mobile Logout */}
-              <div className="mt-auto pt-6">
-                <button
-                  onClick={handleLogout}
-                  className="flex items-center gap-3 p-3 rounded-lg text-red-600 hover:bg-red-50 w-full transition-all duration-200"
-                >
-                  <FaSignOutAlt className="text-lg flex-shrink-0" />
-                  <span className="font-medium">Logout</span>
-                </button>
-              </div>
-            </div>
-          </div>
+            {/* Overlay (for mobile only) */}
+            {isOpen && (
+                <div
+                    className="fixed inset-0 bg-black bg-opacity-40 z-40 lg:hidden"
+                    onClick={() => setIsOpen(false)}
+                ></div>
+            )}
+
+            <main className="flex-1 lg:ml-64 overflow-y-auto">
+                {/* Top Bar (mobile only) */}
+                <div className="lg:hidden flex items-center justify-between bg-white p-4 shadow-md mb-4">
+                    <button onClick={() => setIsOpen(!isOpen)}>
+                        <FaBars className="text-xl" />
+                    </button>
+                    <h2 className="text-lg font-semibold">Dashboard</h2>
+                </div>
+
+                {/* Page Content */}
+                <div className="p-4 lg:p-6">
+                    <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 lg:p-6">
+                        <Outlet />
+                    </div>
+                </div>
+            </main>
         </div>
-
-        {/* Main Content */}
-        <main className="flex-1 lg:ml-72 min-h-screen">
-          <div className="p-4 lg:p-8">
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 lg:p-6">
-              <Outlet />
-            </div>
-          </div>
-        </main>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default DashboardLayout;

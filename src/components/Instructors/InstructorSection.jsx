@@ -31,7 +31,7 @@ const InstructorSection = ({ latestResult, rating }) => {
         return (
             <div className="flex justify-center items-center my-8">
                 <span className="loading loading-spinner loading-md"></span>
-                <span className="ml-2">Loading Advisor...</span>
+                <span className="ml-2">Loading Instructor...</span>
             </div>
         );
     }
@@ -39,8 +39,8 @@ const InstructorSection = ({ latestResult, rating }) => {
     if (error) {
         return (
             <div className="my-8 p-4 bg-red-100 rounded-lg">
-                <h2 className="text-2xl font-bold mb-4">Recommended Advisor</h2>
-                <p>Error loading Advisor: {error.message}</p>
+                <h2 className="text-2xl font-bold mb-4">Recommended Instructor</h2>
+                <p>Error loading Instructor: {error.message}</p>
             </div>
         );
     }
@@ -48,8 +48,8 @@ const InstructorSection = ({ latestResult, rating }) => {
     if (!instructorsData || !instructorsData.instructors) {
         return (
             <div className="my-8 p-4 bg-yellow-100 rounded-lg">
-                <h2 className="text-2xl font-bold mb-4">Recommended Advisor</h2>
-                <p>No Advisor found for this career category.</p>
+                <h2 className="text-2xl font-bold mb-4">Recommended Instructor</h2>
+                <p>No Instructor found for this career category.</p>
             </div>
         );
     }
@@ -117,32 +117,32 @@ const InstructorSection = ({ latestResult, rating }) => {
 
     return (
         <div className="my-8">
-            <h1 className="text-3xl font-bold mb-6 text-gray-800">Recommended Advisor</h1>
+            <h1 className="text-3xl font-bold mb-6 text-gray-800">Recommended Instructor</h1>
 
             {!latestResult.careerId && (
                 <div className="bg-yellow-100 p-4 rounded-lg mb-6">
-                    <p>Showing default Advisor. Take a new quiz for personalized recommendations.</p>
+                    <p>Showing default Instructor. Take a new quiz for personalized recommendations.</p>
                 </div>
             )}
 
             {numericRating < 5 && (
                 <>
-                    {renderInstructorLevel("level1", "Advisor (For Beginner)")}
-                    {renderInstructorLevel("level2", "Advisor (For Intermediate)")}
-                    {renderInstructorLevel("level3", "Advisor (For Advanced)")}
+                    {renderInstructorLevel("level1", "Instructor (For Beginner)")}
+                    {renderInstructorLevel("level2", "Instructor (For Intermediate)")}
+                    {renderInstructorLevel("level3", "Instructor (For Advanced)")}
                 </>
             )}
 
             {numericRating >= 5 && numericRating < 7 && (
                 <>
-                    {renderInstructorLevel("level2", "Recommended Advisor (Intermediate)")}
-                    {renderInstructorLevel("level3", "Level 3 Advisor (Advanced)")}
+                    {renderInstructorLevel("level2", "Recommended Instructor (Intermediate)")}
+                    {renderInstructorLevel("level3", "Level 3 Instructor (Advanced)")}
                 </>
             )}
 
             {numericRating >= 7 && (
                 <>
-                    {renderInstructorLevel("level3", "Recommended Advisor (Advanced)")}
+                    {renderInstructorLevel("level3", "Recommended Instructor (Advanced)")}
                 </>
             )}
 
@@ -151,11 +151,11 @@ const InstructorSection = ({ latestResult, rating }) => {
                     className="bg-white border border-blue-600 text-blue-600 hover:bg-blue-50 font-medium py-2 px-6 rounded-md transition-colors"
                     onClick={() => setShowAllInstructors(true)}
                 >
-                    View All Advisor For Your Goal
+                    View All Instructor For Your Goal
                 </button>
             </div>
 
-            {/* Modal for All Instructors/Advisor */}
+            {/* Modal for All Instructors/Instructor */}
             {showAllInstructors && (
                 <div className="modal modal-open">
                     <div className="modal-box max-w-6xl max-h-screen overflow-y-auto">

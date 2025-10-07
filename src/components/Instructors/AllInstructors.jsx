@@ -25,7 +25,7 @@ const AllInstructors = ({ careerId }) => {
         return (
             <div className="flex justify-center items-center my-8">
                 <span className="loading loading-spinner loading-md"></span>
-                <span className="ml-2">Loading Advisor...</span>
+                <span className="ml-2">Loading Instructor...</span>
             </div>
         );
     }
@@ -34,7 +34,7 @@ const AllInstructors = ({ careerId }) => {
         return (
             <div className="my-8 p-4 bg-red-100 rounded-lg">
                 <h2 className="text-2xl font-bold mb-4">All Instructors</h2>
-                <p>Error loading Advisor: {error.message}</p>
+                <p>Error loading Instructor: {error.message}</p>
             </div>
         );
     }
@@ -45,15 +45,15 @@ const AllInstructors = ({ careerId }) => {
     if (!allInstructorsForCategory || allInstructorsForCategory.length === 0) {
         return (
             <div className="my-8 p-4 bg-yellow-100 rounded-lg">
-                <h2 className="text-2xl font-bold mb-4">All Advisor</h2>
-                <p>No Advisor were found for this category.</p>
+                <h2 className="text-2xl font-bold mb-4">All Instructor</h2>
+                <p>No Instructor were found for this category.</p>
             </div>
         );
     }
 
     return (
         <div className="my-8">
-            <h1 className="text-3xl font-bold mb-6 text-gray-800">All Advisor For Your Goal</h1>
+            <h1 className="text-3xl font-bold mb-6 text-gray-800">All Instructor For Your Goal</h1>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {allInstructorsForCategory.map((instructor, index) => (

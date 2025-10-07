@@ -136,10 +136,10 @@ const ApplyInstructor = () => {
                         Back to Dashboard
                     </button>
                     <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-3">
-                        Become an Advisor
+                        Become an Instructor
                     </h1>
                     <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-                        Join our community of expert Advisors and share your knowledge with aspiring learners worldwide.
+                        Join our community of expert Instructors and share your knowledge with aspiring learners worldwide.
                     </p>
                 </div>
 
