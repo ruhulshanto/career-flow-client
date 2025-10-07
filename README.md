@@ -155,6 +155,3 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 * **Icons:** React Icons, Heroicons
 * **Inspiration:** Every student working hard to find the right direction for their future.
 
----
-
-Would you like me to make a **shorter version (for GitHub overview)** and a **full version (for README file)** — so you can use both?
